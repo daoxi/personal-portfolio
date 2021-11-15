@@ -1,0 +1,6 @@
+.card_grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem,55rem));
+    gap:3rem;
+    justify-content:center;
+}
