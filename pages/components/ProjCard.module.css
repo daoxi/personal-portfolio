@@ -19,6 +19,21 @@
   padding: 1rem;
 }
 
+.card .tags {
+  display: flex;
+  justify-content: center;
+}
+
+.card .tag {
+  color: white;
+  background-color: #00cc66;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+  margin: 1rem;
+  list-style: none;
+}
+
 .card .card_description {
   padding: 0 1rem;
 }
