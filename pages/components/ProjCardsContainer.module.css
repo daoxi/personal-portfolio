@@ -1,6 +1,7 @@
-.card_grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem,55rem));
-    gap:3rem;
-    justify-content:center;
+.card_grid {
+  /* auto fitting infinite project cards into the grid container*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 55rem));
+  gap: 3rem;
+  justify-content: center;
 }

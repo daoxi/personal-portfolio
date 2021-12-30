@@ -1,3 +1,4 @@
+/* the homepage */
 import MainNavigation from "./components/MainNavigation";
 
 function HomePage() {

@@ -1,3 +1,4 @@
+/* the Projects page */
 import MainNavigation from "./components/MainNavigation";
 import ProjCardsContainer from "./components/ProjCardsContainer";
 

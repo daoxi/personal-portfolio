@@ -1,3 +1,4 @@
+/* individual project cards */
 import classes from "./ProjCard.module.css";
 
 function ProjCard(props) {

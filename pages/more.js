@@ -1,3 +1,4 @@
+/* the More page */
 import MainNavigation from "./components/MainNavigation";
 
 function More() {
