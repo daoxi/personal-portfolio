@@ -1,11 +1,12 @@
 /* the homepage */
 import MainNavigation from "./components/MainNavigation";
+import Introduction from "./components/Introduction";
 
 function HomePage() {
   return (
     <div>
       <MainNavigation></MainNavigation>
-      <h1>This is the home page.</h1>
+      <Introduction></Introduction>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.title {
+    /* gradient text */
+    font-size: 4rem;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.intro {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
