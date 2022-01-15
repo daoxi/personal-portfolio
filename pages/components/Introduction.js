@@ -4,15 +4,24 @@ import Link from "next/link";
 
 function Introduction() {
   return (
-    <div>
-      <h1 className={classes.title}>Welcome to my website!</h1>
-      <p className={classes.intro}>
-        My name is Daoxi Sun and welcome to my project portfolio website. ​This
-        website lists some of my projects over the years, click on other tabs to
-        browse them.
-        <br/>
-        I graduated from Iowa State University (U.S.) with a Bachelor’s degree in Electrical Engineering, and Western University (Canada) with a Master’s degree in Software Engineering.
-      </p>
+    <div className={classes.introcontainer}>
+        <h1 className={classes.title}>Welcome to my website!</h1>
+
+        <p className={classes.intro}>
+          My name is Daoxi Sun and welcome to my project portfolio website.
+          <br />I graduated from{" "}
+          <a href="https://www.iastate.edu/">Iowa State University</a> with a
+          Bachelor’s degree in Electrical Engineering, and{" "}
+          <a href="https://www.uwo.ca/">Western University</a> (Canada) with a
+          Master’s degree in Software Engineering.
+          <br />
+          This website lists some of my projects over the years. Please click on
+          other tabs or the button below to browse and learn more.
+        </p>
+
+        <Link href="/projects">
+          <button className={classes.btn1}>Learn More</button>
+        </Link>
     </div>
   );
 }
