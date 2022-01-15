@@ -5,39 +5,40 @@ import Link from "next/link";
 function MainNavigation() {
   return (
     <header className={classes.navbar}>
-      <nav>
-        <ul>
-          <li className={classes.navleftintro}>
-            <Link href="/">
-              <div>
-                <div className={classes.text1}>
-                  Daoxi Sun<br></br>
-                </div>
-                <div className={classes.text2}>Personal Portfolio Website</div>
-              </div>
-            </Link>
-          </li>
-          <li className={classes.navleft}>
-            <Link href="/">Home</Link>
-          </li>
-          <li className={classes.navleft}>
-            <Link href="/projects">Projects</Link>
-          </li>
-          <li className={classes.navleft}>
-            <Link href="/more">More</Link>
-          </li>
+      <div className={classes.navleftintro}>
+        <Link href="/">
+          <div>
+            <div className={classes.text1}>
+              Daoxi Sun<br></br>
+            </div>
+            <div className={classes.text2}>Personal Portfolio Website</div>
+          </div>
+        </Link>
+      </div>
 
-          <li>
-            <Link href="https://github.com/daoxi">
-              <img
-                src="assets/nav-icons/github_icon.png"
-                alt="github_icon"
-                className={classes.navright}
-              />
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <ul className={classes.navleftlist}>
+        <li className={classes.navleftlink}>
+          <Link href="/">Home</Link>
+        </li>
+        <li className={classes.navleftlink}>
+          <Link href="/projects">Projects</Link>
+        </li>
+        <li className={classes.navleftlink}>
+          <Link href="/more">More</Link>
+        </li>
+      </ul>
+
+      <ul className={classes.navrightlist}>
+        <li>
+          <Link href="https://github.com/daoxi">
+            <img
+              className={classes.navrighticon}
+              src="assets/nav-icons/github_icon.png"
+              alt="github_icon"
+            />
+          </Link>
+        </li>
+      </ul>
     </header>
   );
 }

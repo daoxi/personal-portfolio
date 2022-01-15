@@ -1,22 +1,16 @@
 .navbar {
   width: 100%;
-  height: 7rem;
-  background-color: white;
-  padding: 0;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
+  background-color: #0086b3; /* Only for IE browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #00004d, #006666);
   padding: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar .navleftintro {
-  float: left;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  margin-right: 5rem;
+  float: center;
+  margin: 1rem;
   cursor: pointer;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -32,41 +26,67 @@
 /* text2 is for 2nd line of text */
 .navbar .navleftintro .text2 {
   font-size: 2rem;
-  color: #262626;
+  color: #ffffff;
 }
 
-.navbar .navleft {
-  float: left;
-  padding-left: 5rem;
-  padding-top: 4rem;
+.navbar .navleftlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* increase flexbox size in order to align properly */
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.navbar .navrightlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar .navleftlink {
+  margin-top: 4rem;
   font-size: 2rem;
-  cursor: pointer;
-  color: black;
+  color: #ffffff;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-.navbar .navright {
-  float: right;
-  margin-top: 1rem;
-  margin-right: 1rem;
+.navbar .navrightlist .navrighticon {
+  margin: 1rem;
   max-height: 3rem;
   cursor: pointer;
+  /* invert color of image to suit a darker background */
+  filter: invert(1);
 }
 
 /* text decoration (underline in links) can only be removed from anchor tag */
 .navbar a {
   text-decoration: none;
+  cursor: pointer;
 }
 
-/* Disable the default effect of turning purple when clicked */
+/* disable the default effect of turning purple when clicked */
 .navbar a:visited {
-  color: black;
+  color: #ffffff;
 }
 
 /* These have to come after the a:visited selector*/
 .navbar a:hover,
 .navbar a.active {
   color: #00cc66;
+}
+
+/* responsive design, optimize for mobile device */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .navleftlink {
+    margin-top: 1rem;
+  }
 }
