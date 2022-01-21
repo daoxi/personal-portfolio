@@ -1,12 +1,13 @@
 /* the Projects page */
 import MainNavigation from "./components/MainNavigation";
 import ProjCardsContainer from "./components/ProjCardsContainer";
+import ProjectsIntro from "./components/ProjectsIntro";
 
 function Projects() {
   return (
     <div>
       <MainNavigation></MainNavigation>
-      <h1>This is the projects page.</h1>
+      <ProjectsIntro></ProjectsIntro>
       <ProjCardsContainer />
     </div>
   );

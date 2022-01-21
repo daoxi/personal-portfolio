@@ -1,3 +1,5 @@
+/* template css used for various introductory content */
+
 .introcontainer{
 display:grid;
 grid-template-columns: 90%;

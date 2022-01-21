@@ -1,5 +1,5 @@
 /* intro component */
-import classes from "./Introduction.module.css";
+import classes from "./IntroTemplate.module.css";
 import Link from "next/link";
 
 function Introduction() {
