@@ -1,6 +1,7 @@
 /* navigation bar component */
 import classes from "./MainNavigation.module.css";
 import Link from "next/link";
+import Image from "next/image"; /* use next/image instead of regular img element, to avoid problem in Next.js imported component's image routing */
 
 function MainNavigation() {
   return (
@@ -31,11 +32,16 @@ function MainNavigation() {
       <ul className={classes.navrightlist}>
         <li>
           <Link href="https://github.com/daoxi">
-            <img
-              className={classes.navrighticon}
-              src="assets/nav-icons/github_icon.png"
-              alt="github_icon"
-            />
+            {/* wrap the next/image Image element because it's absolutely positioned (hence doesn't support margin/padding/etc.) */}
+            <div className={classes.iconwrapper}>
+              <Image
+                className={classes.navrighticon}
+                src="/assets/nav-icons/github_icon.png"
+                alt="github_icon"
+                width="50"
+                height="50"
+              />
+            </div>
           </Link>
         </li>
       </ul>

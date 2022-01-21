@@ -56,9 +56,11 @@
   font-weight: bold;
 }
 
-.navbar .navrightlist .navrighticon {
-  margin: 1rem;
-  max-height: 3rem;
+.navbar .navrightlist .iconwrapper{
+  margin: 1rem; /* set margin in wrapper because the wrapped next/image Image component is absolutely positioned */
+}
+
+.navbar .navrightlist .iconwrapper .navrighticon {
   cursor: pointer;
   /* invert color of image to suit a darker background */
   filter: invert(1);
