@@ -56,6 +56,10 @@
   font-weight: bold;
 }
 
+.navbar .navleftlink .currentpage{
+  color: #00cc66;
+}
+
 .navbar .navrightlist .iconwrapper{
   margin: 1rem; /* set margin in wrapper because the wrapped next/image Image component is absolutely positioned */
 }
@@ -80,7 +84,7 @@
 /* These have to come after the a:visited selector*/
 .navbar a:hover,
 .navbar a.active {
-  color: #00cc66;
+  text-shadow: 0 0 1rem white;
 }
 
 /* responsive design, optimize for mobile device */
