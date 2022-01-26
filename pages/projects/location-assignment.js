@@ -1,12 +1,17 @@
 /* the Location-Map-Time assignment page */
 import MainNavigation from "../components/MainNavigation";
 import classes from "../components/IntroTemplate.module.css";
+import Link from "next/link";
+import YoutubeEmbed from "../components/YoutubeEmbed";
 
 function LocationAssignment() {
   return (
     <div>
       <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
+        <Link href="/projects">
+          <button className={classes.btnback}>Go back to Projects</button>
+        </Link>
         <h1 className={classes.title}>Location-Map-Time Assignment</h1>
 
         <p className={classes.intro}>
@@ -24,15 +29,26 @@ function LocationAssignment() {
           dynamically when user choose a new location in any way.
           <br />
           <a
-            href="https://daoxisun.com/resources/location-map-time-assignment-demo/"
+            href="https://github.com/daoxi/location-map-time-assignment"
             target="_blank"
             rel="noopener noreferrer"
           >
             {/* the link directs to where the demo is currently hosted, which is a seperate place from where this project is hosted*/}
             Click here
           </a>{" "}
-          for a live demo
+          for the source code, and{" "}
+          <a
+            href="https://daoxisun.com/resources/location-map-time-assignment-demo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            click here
+          </a>{" "}
+          for the live demo, or watch the Youtube video below.
         </p>
+        <div className={classes.youtubevideo}>
+          <YoutubeEmbed embedId="wiBBD6WVMKM" />
+        </div>
       </div>
     </div>
   );

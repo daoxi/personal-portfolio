@@ -2,6 +2,6 @@
   /* auto fitting infinite project cards into the grid container*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 45rem));
-  gap: 3rem;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: space-between;
 }

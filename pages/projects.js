@@ -8,7 +8,6 @@ function Projects() {
     <div>
       <MainNavigation></MainNavigation>
       <ProjectsIntro></ProjectsIntro>
-      <ProjCardsContainer />
     </div>
   );
 }

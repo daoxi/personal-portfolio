@@ -1,5 +1,6 @@
 /* individual project cards */
 import classes from "./ProjCard.module.css";
+import Link from "next/link";
 
 function ProjCard(props) {
   return (
@@ -19,7 +20,10 @@ function ProjCard(props) {
       </ul>
 
       <p className={classes.card_description}>{props.description}</p>
-      <button className={classes.card_btn}>{props.buttontext}</button>
+      <Link href={props.buttonlink}>
+          <button className={classes.card_btn}>{props.buttontext}</button>
+      </Link>
+
     </div>
   );
 }

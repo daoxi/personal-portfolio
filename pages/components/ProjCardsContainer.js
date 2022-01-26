@@ -11,6 +11,7 @@ function ProjCardsContainer() {
         title="The Title"
         description="The Description"
         buttontext="Learn More"
+        buttonlink="/projects/location-assignment"
       />
       <ProjCard
         tags={["tag1"]}
@@ -18,6 +19,7 @@ function ProjCardsContainer() {
         title="The Title 2"
         description="The Description 2"
         buttontext="Learn More"
+        buttonlink="/more"
       />
       <ProjCard
         tags={["tag4", "tag5"]}
@@ -25,6 +27,7 @@ function ProjCardsContainer() {
         title="The Title 3"
         description="The Description 3"
         buttontext="Learn More"
+        buttonlink="/"
       />
       <ProjCard
         tags={["tag44", "tag55", "tag66"]}
@@ -32,6 +35,7 @@ function ProjCardsContainer() {
         title="The Title 4"
         description="The Description 4"
         buttontext="Learn More"
+        buttonlink="/"
       />
     </div>
   );
