@@ -4,10 +4,11 @@ import Link from "next/link";
 import Image from "next/image"; /* use next/image instead of regular img element, to avoid problem in Next.js imported component's image routing */
 import { useRouter } from "next/router"; /* used for checking current route to style navigation links accordingly*/
 
-function MainNavigation() {
+import githubIcon from "../../public/assets/nav-icons/github_icon.png";
 
+function MainNavigation() {
   //The following function is used to output a string to be used as css class if the input link route matches the current route
-  const checkLink = (linkRoute) => {
+  const CheckLink = (linkRoute) => {
     const router = useRouter();
     let currentRoute = router.pathname;
     let setClass = "";
@@ -28,7 +29,7 @@ function MainNavigation() {
   return (
     <header className={classes.navbar}>
       <div className={classes.navleftintro}>
-        <Link href="/">
+        <Link href="/" passHref>
           <div>
             <div className={classes.text1}>
               Daoxi Sun<br></br>
@@ -40,37 +41,41 @@ function MainNavigation() {
 
       <ul className={classes.navleftlist}>
         <li className={classes.navleftlink}>
-          <Link href="/">
-            <a className={classes[checkLink("/")]}>Home</a>
+          <Link href="/" passHref>
+            <a className={classes[CheckLink("/")]}>Home</a>
             {/* call the function to check the route, and style the element conditionally */}
           </Link>
         </li>
         <li className={classes.navleftlink}>
-          <Link href="/projects">
-            <a className={classes[checkLink("/projects")]}>Projects</a>
+          <Link href="/projects" passHref>
+            <a className={classes[CheckLink("/projects")]}>Projects</a>
           </Link>
         </li>
         <li className={classes.navleftlink}>
-          <Link href="/more">
-            <a className={classes[checkLink("/more")]}>More</a>
+          <Link href="/more" passHref>
+            <a className={classes[CheckLink("/more")]}>More</a>
           </Link>
         </li>
       </ul>
 
       <ul className={classes.navrightlist}>
         <li>
-          <Link href="https://github.com/daoxi">
+          <a
+            href="https://github.com/daoxi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {/* wrap the next/image Image element because it's absolutely positioned (hence doesn't support margin/padding/etc.) */}
             <div className={classes.iconwrapper}>
               <Image
                 className={classes.navrighticon}
-                src="/assets/nav-icons/github_icon.png"
+                src={githubIcon}
                 alt="github_icon"
                 width="50"
                 height="50"
               />
             </div>
-          </Link>
+          </a>
         </li>
       </ul>
     </header>

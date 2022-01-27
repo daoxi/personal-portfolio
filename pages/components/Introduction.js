@@ -19,7 +19,7 @@ function Introduction() {
           other tabs or the button below to browse and learn more.
         </p>
 
-        <Link href="/projects">
+        <Link href="/projects" passHref>
           <button className={classes.btn1}>Learn More</button>
         </Link>
     </div>

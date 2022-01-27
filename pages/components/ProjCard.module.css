@@ -4,7 +4,7 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   transition: transform 200ms ease-in;
   background-color: #ffffff;
 }
@@ -16,7 +16,7 @@
 }
 
 .card .card_title {
-  text-align: center
+  text-align: center;
 }
 
 .card .tags {
@@ -29,13 +29,17 @@
   background-color: #00cc66;
   border-radius: 1rem;
   font-size: 1.5rem;
-  padding: 0.25rem 1rem;
-  margin: 0 0.5rem 0 0.5rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.25rem;
   list-style: none;
 }
 
 .card .card_description {
-  padding: 0 1rem;
+  margin: 0 1rem;
+  /* Give it a fixed height so that the parent card element will have a consistent height too (in order for its child elements like the image to align consistently) */
+  /* Maximum 3 lines of text can be fit into the given height without overflowing */
+  height: 4rem;
+  overflow: auto;
 }
 
 .card .card_btn {

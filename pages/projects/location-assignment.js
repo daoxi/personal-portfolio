@@ -9,15 +9,21 @@ function LocationAssignment() {
     <div>
       <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
-        <Link href="/projects">
+        <Link href="/projects" passHref>
           <button className={classes.btnback}>Go back to Projects</button>
         </Link>
         <h1 className={classes.title}>Location-Map-Time Assignment</h1>
 
         <p className={classes.intro}>
           An interview assignment for the web developer position at{" "}
-          <a href="https://www.accuenergy.com/">Accuenergy (Canada) Inc</a>, it
-          utilises Google Maps JavaScript API, Google Places API (for
+          <a
+            href="https://www.accuenergy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Accuenergy (Canada) Inc
+          </a>
+          , it utilises Google Maps JavaScript API, Google Places API (for
           Autocomplete), and Google Time Zone API.
           <br />
           User can get location by browser/client, or input at search box
