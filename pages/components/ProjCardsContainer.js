@@ -6,10 +6,10 @@ function ProjCardsContainer() {
   return (
     <div className={classes.card_grid}>
       <ProjCard
-        tags={["tag1", "tag2", "tag3"]}
-        img="assets/test.png"
-        title="The Title"
-        description="The Description"
+        tags={["HTML", "CSS", "JavaScript", "Ajax", "JSON"]}
+        img="assets\proj-thumbnails\Location-Map-Time-Assignment-thumb.png"
+        title="Location-Map-Time Assignment"
+        description="An interview assignment that utilizes multiple Google Maps APIs and various web development techniques."
         buttontext="Learn More"
         buttonlink="/projects/location-assignment"
       />

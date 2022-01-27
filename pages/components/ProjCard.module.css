@@ -4,19 +4,19 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   transition: transform 200ms ease-in;
   background-color: #ffffff;
 }
 
 .card .card_img {
-  height: 12rem;
+  height: 15rem;
   width: 100%;
   object-fit: cover;
 }
 
 .card .card_title {
-  padding: 1rem;
+  text-align: center
 }
 
 .card .tags {
@@ -30,7 +30,7 @@
   border-radius: 1rem;
   font-size: 1.5rem;
   padding: 0.25rem 1rem;
-  margin: 1rem;
+  margin: 0 0.5rem 0 0.5rem;
   list-style: none;
 }
 
