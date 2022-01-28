@@ -3,10 +3,15 @@ import MainNavigation from "../components/MainNavigation";
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import YoutubeEmbed from "../components/YoutubeEmbed";
+import Head from "next/head";
 
 function LocationAssignment() {
   return (
     <div>
+      <Head>
+        <title>Location-Map-Time Assignment</title>
+        <meta name="description" content="Learn more about this project here." />
+      </Head>
       <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
         <Link href="/projects" passHref>
