@@ -10,8 +10,9 @@ function ProjectsIntro() {
       <p className={classes.intro}>
         Welcome to the projects page.
         <br />I worked on various web design and development tasks, below you
-        can find some of my past work. Click on individual card to learn more
-        (the cards will collapse into fewer column(s) on narrow screens).
+        can find some of my past work. Click on individual card to learn more.
+        <br />
+        (the cards will collapse into fewer column(s) on narrower screens.)
       </p>
       <ProjCardsContainer></ProjCardsContainer>
     </div>

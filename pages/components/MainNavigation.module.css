@@ -56,12 +56,15 @@
   font-weight: bold;
 }
 
-.navbar .navleftlink .currentpage{
+.navbar .navleftlink .currentpage {
   color: #00cc66;
 }
 
-.navbar .navrightlist .iconwrapper{
+.navbar .navrightlist .iconwrapper {
   margin: 1rem; /* set margin in wrapper because the wrapped next/image Image component is absolutely positioned */
+  /* set image dimensions with relative length unit to facilitate responsive design */
+  height: 3rem;
+  width: 3rem;
 }
 
 .navbar .navrightlist .iconwrapper .navrighticon {

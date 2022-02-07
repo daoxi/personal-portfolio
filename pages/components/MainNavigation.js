@@ -71,8 +71,8 @@ function MainNavigation() {
                 className={classes.navrighticon}
                 src={githubIcon}
                 alt="github_icon"
-                width="50"
-                height="50"
+                width="200"
+                height="200"
               />
             </div>
           </a>

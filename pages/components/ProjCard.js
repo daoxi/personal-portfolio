@@ -10,8 +10,8 @@ function ProjCard(props) {
         className={classes.card_img}
         src={props.img}
         alt="proj_thumb"
-        width="2000"
-        height="1000"
+        width="1000"
+        height="500"
       />
       <h2 className={classes.card_title}>{props.title}</h2>
 

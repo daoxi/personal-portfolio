@@ -1,6 +1,6 @@
 .card {
   overflow: hidden;
-  box-shadow: 0 3px 20px black;
+  box-shadow: 0 0.2rem 1.25rem black;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,7 @@
 .card .tags {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .card .tag {
@@ -32,6 +33,13 @@
   padding: 0.25rem 0.75rem;
   margin: 0 0.25rem;
   list-style: none;
+}
+
+/* responsive design, optimize for mobile device */
+@media only screen and (max-width: 1024px) {
+  .card .tag {
+    font-size: 80%;
+  }
 }
 
 .card .card_description {
@@ -47,7 +55,7 @@
   font-weight: bold;
   font-size: 2rem;
   margin: 1rem;
-  border: 3px solid#00cc66;
+  border: 0.3rem solid#00cc66;
   background: transparent;
   color: #00cc66;
   border-radius: 1rem;
