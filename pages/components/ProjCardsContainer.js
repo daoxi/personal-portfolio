@@ -5,6 +5,7 @@ import ProjCard from "./ProjCard";
 /* import all the local images here so that they can be accessed when running "next build" */
 import projThumbPersonalPortfolioWebsite from "../../public/assets/proj-thumbnails/Personal-Portfolio-Website-thumb.png";
 import projThumbLocationMapTimeAssignment from "../../public/assets/proj-thumbnails/Location-Map-Time-Assignment-thumb.png";
+import projThumbLexusLandingPage from "../../public/assets/proj-thumbnails/Lexus-Landing-Page-thumb.jpg";
 import projThumbTest from "../../public/assets/test.png";
 
 function ProjCardsContainer() {
@@ -22,7 +23,7 @@ function ProjCardsContainer() {
         tags={["HTML", "CSS", "JavaScript", "Ajax", "JSON"]}
         img={projThumbLocationMapTimeAssignment}
         title="Location-Map-Time Assignment"
-        description="An interview assignment that utilizes multiple Google Maps APIs and various web development techniques."
+        description="A tech interview assignment that utilizes multiple Google Maps APIs and various web development techniques."
         buttontext="Learn More"
         buttonlink="/projects/location-assignment"
       />
@@ -35,12 +36,12 @@ function ProjCardsContainer() {
         buttonlink="/"
       />
       <ProjCard
-        tags={["tag44", "tag55", "tag66"]}
-        img={projThumbTest}
-        title="The Title 4"
-        description="The Description 4"
+        tags={["WordPress", "PHP", "SEO", "Photoshop"]}
+        img={projThumbLexusLandingPage}
+        title="Lexus Landing Page"
+        description="A web design interview assignment that involves building a car's landing page for Weins Canada Inc."
         buttontext="Learn More"
-        buttonlink="/"
+        buttonlink="/projects/lexus-landing-page"
       />
     </div>
   );

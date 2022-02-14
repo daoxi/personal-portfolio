@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
 
         {/* The following title and description will be used if it's not specified on individual pages */}
         <title>Daoxi Sun</title>

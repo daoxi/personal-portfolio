@@ -10,7 +10,10 @@ function LocationAssignment() {
     <div>
       <Head>
         <title>Location-Map-Time Assignment</title>
-        <meta name="description" content="Learn more about this project here." />
+        <meta
+          name="description"
+          content="Learn more about this project here."
+        />
       </Head>
       <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
@@ -44,7 +47,6 @@ function LocationAssignment() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* the link directs to where the demo is currently hosted, which is a seperate place from where this project is hosted*/}
             Click here
           </a>{" "}
           for the source code, and{" "}
@@ -54,7 +56,8 @@ function LocationAssignment() {
             rel="noopener noreferrer"
           >
             click here
-          </a>{" "}
+          </a>
+          {/* the link directs to where the demo is currently hosted, which is a seperate place from where this app itself (personal portfolio website) is deployed*/}{" "}
           for the live demo, or watch the Youtube video below.
         </p>
         <div className={classes.youtubevideo}>
