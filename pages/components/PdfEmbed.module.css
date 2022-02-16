@@ -1,0 +1,4 @@
+.pdfembed {
+    width: 100%;
+    height: 65rem; /* different PDF viewers in different browsers have different default heights which might not always be optimal, so give it a fixed height */
+}

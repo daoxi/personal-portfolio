@@ -34,7 +34,11 @@
 }
 
 .youtubevideo {
-  margin: 0 0 0 0;
+  margin: 0 0 0 0; /* when needed, adjust the margin here */
+}
+
+.pdfviewer {
+  margin: 0 0 0 0; /* when needed, adjust the margin here */
 }
 
 .btn1 {

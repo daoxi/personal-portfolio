@@ -3,6 +3,7 @@ import MainNavigation from "../components/MainNavigation";
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import PdfEmbed from "../components/PdfEmbed";
 
 function CraigsDota() {
   return (
@@ -93,16 +94,19 @@ function CraigsDota() {
           >
             Click here
           </a>{" "}
-          to view the source code in its repository, or{" "}
+          to view the source code in its repository, or view the{" "}
           <a
             href="https://daoxisun.com/resources/CraigsDota_project_report.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            click here
+            project report
           </a>{" "}
-          for the project report.
+          below.
         </p>
+        <div className={classes.pdfviewer}>
+          <PdfEmbed embedPath="https://daoxisun.com/resources/CraigsDota_project_report.pdf" />
+        </div>
       </div>
     </div>
   );
