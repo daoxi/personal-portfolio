@@ -1,5 +1,6 @@
 /* the More page */
 import MainNavigation from "./components/MainNavigation";
+import MoreIntro from "./components/MoreIntro";
 import Head from "next/head";
 
 function More() {
@@ -10,7 +11,7 @@ function More() {
         <meta name="description" content="Get more information here." />
       </Head>
       <MainNavigation></MainNavigation>
-      <h1>This is the more page.</h1>
+      <MoreIntro></MoreIntro>
     </div>
   );
 }

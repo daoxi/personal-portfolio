@@ -1,4 +1,4 @@
-/* intro component */
+/* intro component for the homepage */
 import classes from "./IntroTemplate.module.css";
 import Link from "next/link";
 
