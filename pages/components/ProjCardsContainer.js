@@ -5,6 +5,7 @@ import ProjCard from "./ProjCard";
 /* import all the local images here so that they can be accessed when running "next build" */
 import projThumbPersonalPortfolioWebsite from "../../public/assets/proj-thumbnails/Personal-Portfolio-Website-thumb.png";
 import projThumbLocationMapTimeAssignment from "../../public/assets/proj-thumbnails/Location-Map-Time-Assignment-thumb.png";
+import projThumbCraigsDota from "../../public/assets/proj-thumbnails/CraigsDota-thumb.png";
 import projThumbLexusLandingPage from "../../public/assets/proj-thumbnails/Lexus-Landing-Page-thumb.jpg";
 import projThumbTest from "../../public/assets/test.png";
 
@@ -28,12 +29,12 @@ function ProjCardsContainer() {
         buttonlink="/projects/location-assignment"
       />
       <ProjCard
-        tags={["tag4", "tag5"]}
-        img={projThumbTest}
-        title="The Title 3"
-        description="The Description 3"
+        tags={["Angular", "TypeScript", "Bootstrap", "Firebase"]}
+        img={projThumbCraigsDota}
+        title="M.Eng. Project: CraigsDota"
+        description="A full-stack Angular project that implements a website for video gamers to find suitable playmates, users can use third-party login or register their own accounts."
         buttontext="Learn More"
-        buttonlink="/"
+        buttonlink="/projects/craigsdota"
       />
       <ProjCard
         tags={["WordPress", "PHP", "SEO", "Photoshop"]}

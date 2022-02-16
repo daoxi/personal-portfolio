@@ -49,7 +49,7 @@ function LocationAssignment() {
           >
             Click here
           </a>{" "}
-          for the source code, and{" "}
+          to view the source code in its repository, and{" "}
           <a
             href="https://daoxisun.com/resources/location-map-time-assignment-demo/"
             target="_blank"
