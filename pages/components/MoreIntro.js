@@ -7,7 +7,11 @@ function MoreIntro() {
       <h1 className={classes.title}>More about me</h1>
       <p className={classes.intro}>
         You can visit my{" "}
-        <a href="https://daoxisun.weebly.com/university-class-projects.html">
+        <a
+          href="https://daoxisun.weebly.com/university-class-projects.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           legacy portfolio website
         </a>{" "}
         to learn more about some of my other non-web-dev university engineering
