@@ -23,8 +23,8 @@ function CraigsDota() {
         <h1 className={classes.title}>M.Eng. Project: CraigsDota</h1>
 
         <p className={classes.intro}>
-          This is a project that's completed when I was pursuing my M.Eng.
-          degree, it's built with{" "}
+          This is a project that&#39;s completed when I was pursuing my M.Eng.
+          degree, it&#39;s built with{" "}
           <a
             href="https://angular.io/"
             target="_blank"
