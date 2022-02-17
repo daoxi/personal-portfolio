@@ -1,11 +1,26 @@
 import "../styles/globals.css";
-
+import React, { useEffect } from "react";
 // import the Head component for appending elements to the head of the page
 import Head from "next/head";
 // import favIcon as local image so that it will be accessed during "next build"
 import favIcon from "../public/favicon/favicon.ico";
 
 function MyApp({ Component, pageProps }) {
+  // Give warning to Internet Explorer (IE) users about compatibility issue
+  // Use the useEffect Hook so that the browser objects such as "navigator" can be accessed
+  useEffect(() => {
+    // Check for "Trident/" for IE 11, check for "MSIE" for IE 10 and older
+    let browserIsIE =
+      navigator.userAgent.toUpperCase().indexOf("TRIDENT/") != -1 ||
+      navigator.userAgent.toUpperCase().indexOf("MSIE") != -1;
+    // console.log("Is IE Browser: " + browserIsIE);
+    if (browserIsIE) {
+      alert(
+        "You are using Internet Explorer which isn't supported anymore, please use a modern browser such as Chrome, Firefox, Edge, Opera, and Safari."
+      );
+    }
+  });
+
   return (
     <div>
       <Head>
