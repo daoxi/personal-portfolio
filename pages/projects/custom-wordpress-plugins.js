@@ -108,11 +108,11 @@ function CustomWordPressPlugins() {
             meta box
           </a>{" "}
           is added to every post-editor page to display all users whose roles
-          are "author", the admin can then select which author(s)/developer(s)
+          are &quot;author&quot;, the admin can then select which author(s)/developer(s)
           to be included for that specific post, the selection will be saved to
           the database when the post is saved.
           <br />
-          (To access the admin side's demo, please kindly contact me to request
+          (To access the admin side&apos;s demo, please kindly contact me to request
           the login credentials.)
           <br />
           <br />
@@ -184,7 +184,7 @@ function CustomWordPressPlugins() {
           settings will be saved to the database once the save button is
           clicked.
           <br />
-          (To access the admin side's demo, please kindly contact me to request
+          (To access the admin side&apos;s demo, please kindly contact me to request
           the login credentials.)
           <br />
           <br />
