@@ -38,8 +38,8 @@ function PortfolioWebsite() {
           >
             Next.js
           </a>{" "}
-          (a framework used for server-side rendering, routing, etc.) as a single-page application (SPA), it is
-          deployed on a{" "}
+          (the framework used for server-side rendering, routing, etc.) as a
+          single-page application (SPA), it is deployed on a{" "}
           <a
             href="https://nodejs.org/"
             target="_blank"
