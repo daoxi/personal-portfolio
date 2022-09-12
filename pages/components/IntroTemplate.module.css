@@ -33,6 +33,10 @@
   color: blue;
 }
 
+.list {
+  font-size: 2rem;
+}
+
 .intro .insert_img_wrapper {
   position: relative; /* This is needed when layout="fill" is used in the child Next.js Image element */
   /* The following shows the wrapper's border to help debugging if needed */
