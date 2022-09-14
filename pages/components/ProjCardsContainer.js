@@ -22,6 +22,14 @@ function ProjCardsContainer() {
         buttonlink="/projects/portfolio-website"
       />
       <ProjCard
+        tags={["Test"]}
+        img={projThumbTest}
+        title="Image Slides Generator"
+        description="Des."
+        buttontext="Learn More"
+        buttonlink="/projects/image-slides-generator"
+      />
+      <ProjCard
         tags={["PHP", "jQuery", "MySQL", "WordPress"]}
         img={projThumbCustomWpPlugins}
         title="Custom WordPress Plugins"
