@@ -28,7 +28,7 @@ function ImageSlidesGenerator() {
 
         <p className={classes.intro}>
           A webpage that allows the users to interact with slides generated
-          using random images fetched from{" "}
+          using random room images (sourced using certain keywords) fetched from{" "}
           <a
             href="https://unsplash.com/"
             target="_blank"
@@ -77,6 +77,15 @@ function ImageSlidesGenerator() {
           <li>and more...</li>
         </ul>
         <p className={classes.intro}>
+          <a
+            href="https://github.com/daoxi/image-slides-generator/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here
+          </a>{" "}
+          to access the source code in the repository.
+          <br />
           <a
             href="https://daoxisun.com/resources/image-slides-generator/"
             target="_blank"
