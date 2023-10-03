@@ -5,6 +5,7 @@ import Image from "next/image"; /* use next/image instead of regular img element
 import { useRouter } from "next/router"; /* used for checking current route to style navigation links accordingly*/
 
 import githubIcon from "../../public/assets/nav-icons/github_icon.png";
+import linkedinIcon from "../../public/assets/nav-icons/linkedin_icon.png";
 
 function MainNavigation() {
   //The following function is used to output a string to be used as css class if the input link route matches the current route
@@ -71,6 +72,24 @@ function MainNavigation() {
                 className={classes.navrighticon}
                 src={githubIcon}
                 alt="github_icon"
+                width="200"
+                height="200"
+              />
+            </div>
+          </a>
+				</li>
+				<li>
+					<a
+            href="https://LinkedIn.com/in/Daoxi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* wrap the next/image Image element because it's absolutely positioned (hence doesn't support margin/padding/etc.) */}
+            <div className={classes.iconwrapper}>
+              <Image
+                className={classes.navrighticon}
+                src={linkedinIcon}
+                alt="linkedin_icon"
                 width="200"
                 height="200"
               />
