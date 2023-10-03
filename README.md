@@ -1,5 +1,11 @@
 This is a personal portfolio project by Daoxi Sun, built with [React](https://reactjs.org/) and [Next.js](https://nextjs.org/).
 
+## Set up
+To install all dependencies:
+```bash
+npm install
+```
+
 ## Development
 To run the development server:
 ```bash
