@@ -1,73 +1,74 @@
 .card {
-  overflow: hidden;
-  box-shadow: 0 0.2rem 1.25rem black;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 200ms ease-in;
-  background-color: #ffffff;
+	overflow: hidden;
+	box-shadow: 0 0.2rem 1.25rem black;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: transform 200ms ease-in;
+	background-color: hsl(0, 0%, 97%);
+	--main-card-color: #00cc66;
 }
 
 .card .card_img {
-  height: 15rem;
-  width: 100%;
-  object-fit: cover;
+	height: 15rem;
+	width: 100%;
+	object-fit: cover;
 }
 
 .card .card_title {
-  text-align: center;
+	text-align: center;
 }
 
 .card .tags {
-  display: flex;
-  justify-content: center;
-  padding: 0;
+	display: flex;
+	justify-content: center;
+	padding: 0;
 }
 
 .card .tag {
-  color: white;
-  background-color: #00cc66;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-  padding: 0.25rem 0.75rem;
-  margin: 0 0.25rem;
-  list-style: none;
+	color: white;
+	background-color: var(--main-card-color);
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	padding: 0.25rem 0.75rem;
+	margin: 0 0.25rem;
+	list-style: none;
 }
 
 /* responsive design, optimize for mobile device */
 @media only screen and (max-width: 1024px) {
-  .card .tag {
-    font-size: 80%;
-  }
+	.card .tag {
+		font-size: 80%;
+	}
 }
 
 .card .card_description {
-  margin: 0 1rem;
-  /* Give it a fixed height so that the parent card element will have a consistent height too (in order for its child elements like the image to align consistently) */
-  /* Maximum 3 lines of text can be fit into the given height without overflowing */
-  height: 4rem;
-  overflow: auto;
+	margin: 0 1rem;
+	/* Give it a fixed height so that the parent card element will have a consistent height too (in order for its child elements like the image to align consistently) */
+	/* Maximum 3 lines of text can be fit into the given height without overflowing */
+	height: 4rem;
+	overflow: auto;
 }
 
 .card .card_btn {
-  padding: 1rem;
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 1rem;
-  border: 0.3rem solid#00cc66;
-  background: transparent;
-  color: #00cc66;
-  border-radius: 1rem;
-  transition: background 200ms ease-in, color 200ms ease in;
+	padding: 1rem;
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 1rem;
+	border: 0.3rem solid var(--main-card-color);
+	border-radius: 1rem;
+	background: transparent;
+	color: var(--main-card-color);
+	transition: background-color 300ms ease-out 100ms, color 300ms ease-out 100ms;
 }
 
 .card:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
-.card_btn:hover {
-  background-color: #00cc66;
-  color: white;
-  cursor: pointer;
+.card .card_btn:hover {
+	background-color: var(--main-card-color);
+	color: white;
+	cursor: pointer;
 }

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function ProjCard(props) {
   return (
-    <div className={classes.card}>
+    <div className={classes.card} style={props.customColor /* custom color is optional */ && {"--main-card-color": props.customColor}}>
       <Image
         className={classes.card_img}
         src={props.img}

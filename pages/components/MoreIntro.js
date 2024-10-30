@@ -17,9 +17,10 @@ function MoreIntro() {
         to learn more about some of my other non-web-dev university engineering
         projects (some of which involve programming in various languages).
         <br />
+				<br />
         You can also email me at{" "}
         <a href="mailto:daoxisun@gmail.com">daoxisun@gmail.com</a> for any
-        question you may have.
+        questions you may have.
       </p>
     </div>
   );
