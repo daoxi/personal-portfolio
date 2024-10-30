@@ -82,7 +82,7 @@ function ProjCardsContainer() {
 				tags={["HTML", "JavaScript", "jQuery"]}
 				img={projThumbLocationMapTimeAssignment}
 				title="Location-Map-Time Assignment"
-				description="A quick simple interview assignment that utilizes multiple Google Maps APIs and various web development techniques."
+				description="An interview assignment that utilizes multiple Google Maps APIs and various web development techniques."
 				buttontext="Learn More"
 				buttonlink="/projects/location-assignment"
 			/>
