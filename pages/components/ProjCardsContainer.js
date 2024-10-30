@@ -55,7 +55,7 @@ function ProjCardsContainer() {
 				tags={["Angular", "TypeScript", "Bootstrap", "Firebase"]}
 				img={projThumbCraigsDota}
 				title="CraigsDota (Platform for DotA Gamers)"
-				description="A posting-based website (similar to Craigslist) for gamers to find playmates, users can login (third-party auth / register accounts) to share game-related info, and more."
+				description="A posting-based (similar to Craigslist) project for gamers to find playmates, users can login (third-party auth / register accounts) to share game-related info, and more."
 				buttontext="Learn More"
 				buttonlink="/projects/craigsdota"
 			/>
