@@ -45,7 +45,7 @@ function ProjCardsContainer() {
 			<ProjCard
 				tags={["PHP", "jQuery", "MySQL", "WordPress"]}
 				img={projThumbCustomWpPlugins}
-				title="Custom WordPress Plugins (for Auto Trader)"
+				title="Custom WordPress Plugins"
 				description="These plugins are programmed from scratch to add various new customized features to the WordPress content management system."
 				buttontext="Learn More"
 				buttonlink="/projects/custom-wordpress-plugins"
