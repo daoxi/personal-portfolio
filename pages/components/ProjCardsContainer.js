@@ -18,7 +18,7 @@ function ProjCardsContainer() {
 			<ProjCard
 				tags={["React", "TypeScript", "Bootstrap", "SCSS"]}
 				img={projThumbGetem}
-				title="Getem (Markdown Note App)"
+				title="GetEm (Markdown Note App)"
 				description={
 					<span>
 						<strong>
@@ -29,7 +29,7 @@ function ProjCardsContainer() {
 					</span>
 				}
 				buttontext="Check It Out!"
-				buttonlink="/projects/pending"
+				buttonlink="/projects/getem-project"
 				customColor="#00BFFF"
 			/>
 
