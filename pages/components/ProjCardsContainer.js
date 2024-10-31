@@ -24,7 +24,7 @@ function ProjCardsContainer() {
 						<strong>
 							This is my most recent and currently maintained project
 						</strong>
-						, it's a Markdown note taking app that also allows you to search and
+						, it&apos;s a Markdown note taking app that also allows you to search and
 						manage different notes with their tags and much more.
 					</span>
 				}

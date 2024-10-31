@@ -31,8 +31,8 @@ function CraigsDota() {
 					>
 						Craigslist
 					</a>
-					, from which the project's name was inspired) project that&#39;s
-					completed when I was pursuing my M.Eng. degree (it's no longer
+					, from which the project&apos;s name was inspired) project that&#39;s
+					completed when I was pursuing my M.Eng. degree (it&apos;s no longer
 					maintained/deployed now), built with{" "}
 					<a
 						href="https://angular.io/"

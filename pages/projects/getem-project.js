@@ -50,7 +50,7 @@ function GetemProject() {
 					.
 					<br />
 					<br />
-					Here are a few screenshots (it's still recommended to check out the{" "}
+					Here are a few screenshots (it&apos;s still recommended to check out the{" "}
 					<a
 						href="https://getem.daoxisun.com"
 						target="_blank"
@@ -58,7 +58,7 @@ function GetemProject() {
 					>
 						live demo
 					</a>{" "}
-					instead because it's more comprehensive and up-to-date):
+					instead because it&apos;s more comprehensive and up-to-date):
 					<br />
 					<br />
 					<Link href={getemHomeManage.src} passHref>
