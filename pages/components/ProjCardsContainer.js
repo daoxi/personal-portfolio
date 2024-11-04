@@ -11,10 +11,11 @@ import projThumbLexusLandingPage from "../../public/assets/proj-thumbnails/Lexus
 import projThumbImageSlidesGenerator from "../../public/assets/proj-thumbnails/Image-Slides-Generator-thumb.png";
 import projThumbGetem from "../../public/assets/proj-thumbnails/Getem-thumb.png";
 import projThumbTest from "../../public/assets/test.png";
+import projThumbTestPortrait from "../../public/assets/test-portrait.png";
 
 function ProjCardsContainer() {
 	return (
-		<div className={classes.card_grid}>
+		<div className={classes["card-container"]}>
 			<ProjCard
 				tags={["React", "TypeScript", "Bootstrap", "SCSS"]}
 				img={projThumbGetem}
@@ -24,8 +25,8 @@ function ProjCardsContainer() {
 						<strong>
 							This is my most recent and currently maintained project
 						</strong>
-						, it&apos;s a Markdown note taking app that also allows you to search and
-						manage different notes with their tags and much more.
+						, a Markdown note taking app that also allows users to
+						search and manage different notes with their tags and much more.
 					</span>
 				}
 				buttontext="Check It Out!"

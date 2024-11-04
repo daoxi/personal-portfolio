@@ -1,20 +1,10 @@
 /* template css used for various introductory content */
 
 .introcontainer {
-  display: grid;
-  grid-template-columns: 85%;
+  display: block;
+	width: 100%;
+	max-width: 1399px;
   justify-content: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* responsive design, optimize for mobile device */
-@media only screen and (max-width: 1024px) {
-  .introcontainer {
-    grid-template-columns: 100%;
-  }
 }
 
 .title {
@@ -26,7 +16,7 @@
 }
 
 .intro {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .intro a {
@@ -34,7 +24,7 @@
 }
 
 .list {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .intro .insert_img_wrapper {
@@ -83,7 +73,7 @@
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;
-  height: 2rem;
+  height: 3rem;
   text-align: center;
   border: none;
   background-size: 200% 100%; /* extra horizontal size for the hover animation later*/

@@ -1,7 +1,8 @@
-.card_grid {
+.card-container {
   /* auto fitting infinite project cards into the grid container*/
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 45rem));
-  gap: 2rem;
-  justify-content: space-between;
+  display: flex;
+	row-gap: 3rem;
+	column-gap: 2rem;
+	flex-wrap: wrap;
+  justify-content: space-around;
 }

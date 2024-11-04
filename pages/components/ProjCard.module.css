@@ -8,11 +8,11 @@
 	transition: transform 200ms ease-in;
 	background-color: hsl(0, 0%, 97%);
 	--main-card-color: #00cc66;
+	width: 24rem;
 }
 
 .card .card_img {
-	height: 15rem;
-	width: 100%;
+	width: 100%; /* card image width and height are set by the "width" and "height" props passed to the component, image file's width:height should be 2:1 */
 	object-fit: cover;
 }
 
@@ -22,39 +22,41 @@
 
 .card .tags {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0;
+	row-gap: 0.3rem;
+	column-gap: 0.3rem;
 }
 
 .card .tag {
 	color: white;
 	background-color: var(--main-card-color);
 	border-radius: 1rem;
-	font-size: 1.5rem;
-	padding: 0.25rem 0.75rem;
-	margin: 0 0.25rem;
+	font-size: 1rem;
+	padding: 0.3rem 0.5rem;
+	margin: 0; /* use gap in parent container instead */
 	list-style: none;
 }
 
 /* responsive design, optimize for mobile device */
+/*
 @media only screen and (max-width: 1024px) {
 	.card .tag {
 		font-size: 80%;
 	}
 }
+*/
 
 .card .card_description {
 	margin: 0 1rem;
-	/* Give it a fixed height so that the parent card element will have a consistent height too (in order for its child elements like the image to align consistently) */
-	/* Maximum 3 lines of text can be fit into the given height without overflowing */
-	height: 4rem;
 	overflow: auto;
 }
 
 .card .card_btn {
 	padding: 1rem;
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	margin: 1rem;
 	border: 0.3rem solid var(--main-card-color);
 	border-radius: 1rem;

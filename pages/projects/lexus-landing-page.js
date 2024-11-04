@@ -1,5 +1,4 @@
 /* the lexus landing page's intro page */
-import MainNavigation from "../components/MainNavigation";
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import YoutubeEmbed from "../components/YoutubeEmbed";
@@ -15,7 +14,6 @@ function LexusLandingPage() {
           content="Learn more about this project here."
         />
       </Head>
-      <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
         <Link href="/projects" passHref legacyBehavior>
           <button className={classes.btnback}>Go back to Projects</button>
