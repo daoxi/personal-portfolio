@@ -7,17 +7,17 @@ import PdfEmbed from "../components/PdfEmbed";
 
 function CraigsDota() {
 	return (
-		<div>
-			<Head>
+        (<div>
+            <Head>
 				<title>M.Eng. Project: CraigsDota</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-			<MainNavigation></MainNavigation>
-			<div className={classes.introcontainer}>
-				<Link href="/projects" passHref>
+            <MainNavigation></MainNavigation>
+            <div className={classes.introcontainer}>
+				<Link href="/projects" passHref legacyBehavior>
 					<button className={classes.btnback}>Go back to Projects</button>
 				</Link>
 				<h1 className={classes.title}>CraigsDota</h1>
@@ -110,8 +110,8 @@ function CraigsDota() {
 					<PdfEmbed embedPath="https://daoxisun.com/resources/CraigsDota_project_report.pdf" />
 				</div>
 			</div>
-		</div>
-	);
+        </div>)
+    );
 }
 
 export default CraigsDota;

@@ -1,7 +1,7 @@
 /* navigation bar component */
 import classes from "./MainNavigation.module.css";
 import Link from "next/link";
-import Image from "next/image"; /* use next/image instead of regular img element, to avoid problem in Next.js imported component's image routing */
+import Image from "next/legacy/image"; /* use next/image instead of regular img element, to avoid problem in Next.js imported component's image routing */
 import { useRouter } from "next/router"; /* used for checking current route to style navigation links accordingly*/
 
 import githubIcon from "../../public/assets/nav-icons/github_icon.png";
@@ -28,9 +28,9 @@ function MainNavigation() {
   };
 
   return (
-    <header className={classes.navbar}>
+    (<header className={classes.navbar}>
       <div className={classes.navleftintro}>
-        <Link href="/" passHref>
+        <Link href="/" passHref legacyBehavior>
           <div>
             <div className={classes.text1}>
               Daoxi Sun<br></br>
@@ -39,26 +39,24 @@ function MainNavigation() {
           </div>
         </Link>
       </div>
-
       <ul className={classes.navleftlist}>
         <li className={classes.navleftlink}>
-          <Link href="/" passHref>
-            <a className={classes[CheckLink("/")]}>Home</a>
+          <Link href="/" passHref className={classes[CheckLink("/")]}>
+            Home
             {/* call the function to check the route, and style the element conditionally */}
           </Link>
         </li>
         <li className={classes.navleftlink}>
-          <Link href="/projects" passHref>
-            <a className={classes[CheckLink("/projects")]}>Projects</a>
+          <Link href="/projects" passHref className={classes[CheckLink("/projects")]}>
+            Projects
           </Link>
         </li>
         <li className={classes.navleftlink}>
-          <Link href="/more" passHref>
-            <a className={classes[CheckLink("/more")]}>More</a>
+          <Link href="/more" passHref className={classes[CheckLink("/more")]}>
+            More
           </Link>
         </li>
       </ul>
-
       <ul className={classes.navrightlist}>
         <li>
           <a
@@ -97,7 +95,7 @@ function MainNavigation() {
           </a>
         </li>
       </ul>
-    </header>
+    </header>)
   );
 }
 

@@ -3,7 +3,7 @@ import MainNavigation from "../components/MainNavigation";
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 /* Import the images to be inserted into the page */
 import slidesScreenshot from "../../public/assets/image-slides-generator-page/image-slides-generator-screenshot.png";
@@ -11,17 +11,17 @@ import slidesScreenshot2 from "../../public/assets/image-slides-generator-page/i
 
 function ImageSlidesGenerator() {
 	return (
-		<div>
-			<Head>
+        (<div>
+            <Head>
 				<title>Image Slides Generator</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-			<MainNavigation></MainNavigation>
-			<div className={classes.introcontainer}>
-				<Link href="/projects" passHref>
+            <MainNavigation></MainNavigation>
+            <div className={classes.introcontainer}>
+				<Link href="/projects" passHref legacyBehavior>
 					<button className={classes.btnback}>Go back to Projects</button>
 				</Link>
 				<h1 className={classes.title}>Image Slides Generator</h1>
@@ -90,41 +90,43 @@ function ImageSlidesGenerator() {
 						{/*used to be hosted on https://daoxisun.com/resources/image-slides-generator/ */}
 					, the screenshots of the project are below:
 				</p>
-				<Link href={slidesScreenshot.src} passHref>
-					<a
-						className={classes.insert_img_wrapper}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Image
-							className={classes.insert_img}
-							src={slidesScreenshot}
-							alt="slidesScreenshot"
-							width="1498"
-							height="892"
-							title="Slides Screenshot"
-						/>
-					</a>
-				</Link>
-				<Link href={slidesScreenshot2.src} passHref>
-					<a
-						className={classes.insert_img_wrapper}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Image
-							className={classes.insert_img}
-							src={slidesScreenshot2}
-							alt="slidesScreenshot2"
-							width="1498"
-							height="892"
-							title="Slides Screenshot Fullscreen"
-						/>
-					</a>
-				</Link>
+				<Link
+                    href={slidesScreenshot.src}
+                    passHref
+                    className={classes.insert_img_wrapper}
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <Image
+                        className={classes.insert_img}
+                        src={slidesScreenshot}
+                        alt="slidesScreenshot"
+                        width="1498"
+                        height="892"
+                        title="Slides Screenshot"
+                    />
+
+                </Link>
+				<Link
+                    href={slidesScreenshot2.src}
+                    passHref
+                    className={classes.insert_img_wrapper}
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <Image
+                        className={classes.insert_img}
+                        src={slidesScreenshot2}
+                        alt="slidesScreenshot2"
+                        width="1498"
+                        height="892"
+                        title="Slides Screenshot Fullscreen"
+                    />
+
+                </Link>
 			</div>
-		</div>
-	);
+        </div>)
+    );
 }
 
 export default ImageSlidesGenerator;

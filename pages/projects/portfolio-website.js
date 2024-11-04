@@ -6,7 +6,7 @@ import Head from "next/head";
 
 function PortfolioWebsite() {
   return (
-    <div>
+    (<div>
       <Head>
         <title>Portfolio Website Project</title>
         <meta
@@ -16,7 +16,7 @@ function PortfolioWebsite() {
       </Head>
       <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
-        <Link href="/projects" passHref>
+        <Link href="/projects" passHref legacyBehavior>
           <button className={classes.btnback}>Go back to Projects</button>
         </Link>
         <h1 className={classes.title}>Portfolio Website Project</h1>
@@ -60,7 +60,7 @@ function PortfolioWebsite() {
           to visit its repository.
         </p>
       </div>
-    </div>
+    </div>)
   );
 }
 

@@ -3,7 +3,7 @@ import MainNavigation from "../components/MainNavigation";
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 /* Import the images to be inserted into the page */
 import developerWpAdminMetabox from "../../public/assets/custom-wordpress-plugins-page/developer-wp-admin-metabox.png";
@@ -13,17 +13,17 @@ import slideshowWpFrontend from "../../public/assets/custom-wordpress-plugins-pa
 
 function CustomWordPressPlugins() {
 	return (
-		<div>
-			<Head>
+        (<div>
+            <Head>
 				<title>Custom WordPress Plugins</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-			<MainNavigation></MainNavigation>
-			<div className={classes.introcontainer}>
-				<Link href="/projects" passHref>
+            <MainNavigation></MainNavigation>
+            <div className={classes.introcontainer}>
+				<Link href="/projects" passHref legacyBehavior>
 					<button className={classes.btnback}>Go back to Projects</button>
 				</Link>
 				<h1 className={classes.title}>Custom WordPress Plugins</h1>
@@ -121,22 +121,23 @@ function CustomWordPressPlugins() {
 					request the login credentials.)
 					<br />
 					<br />
-					<Link href={developerWpAdminMetabox.src} passHref>
-						<a
-							className={classes.insert_img_wrapper}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Image
-								className={classes.insert_img}
-								src={developerWpAdminMetabox}
-								alt="developerWpAdminMetabox"
-								width="496"
-								height="187"
-								title="Plugin Screenshot"
-							/>
-						</a>
-					</Link>
+					<Link
+                        href={developerWpAdminMetabox.src}
+                        passHref
+                        className={classes.insert_img_wrapper}
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <Image
+                            className={classes.insert_img}
+                            src={developerWpAdminMetabox}
+                            alt="developerWpAdminMetabox"
+                            width="496"
+                            height="187"
+                            title="Plugin Screenshot"
+                        />
+
+                    </Link>
 					<h4>Front End</h4>A box will be displayed at the end of each post, it
 					will display a list of users that were selected for that specific
 					post, with their{" "}
@@ -161,22 +162,23 @@ function CustomWordPressPlugins() {
 					to view some example boxes under each post)
 					<br />
 					<br />
-					<Link href={developerWpFrontend.src} passHref>
-						<a
-							className={classes.insert_img_wrapper}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Image
-								className={classes.insert_img}
-								src={developerWpFrontend}
-								alt="developerWpFrontend"
-								width="674"
-								height="406"
-								title="Plugin Screenshot"
-							/>
-						</a>
-					</Link>
+					<Link
+                        href={developerWpFrontend.src}
+                        passHref
+                        className={classes.insert_img_wrapper}
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <Image
+                            className={classes.insert_img}
+                            src={developerWpFrontend}
+                            alt="developerWpFrontend"
+                            width="674"
+                            height="406"
+                            title="Plugin Screenshot"
+                        />
+
+                    </Link>
 					<h2>Trader Slideshow Plugin</h2>A plugin that allows the admin to add,
 					remove, reorder images to create a slideshow that can be added to any
 					post/page.
@@ -193,22 +195,23 @@ function CustomWordPressPlugins() {
 					request the login credentials.)
 					<br />
 					<br />
-					<Link href={slideshowWpAdmin.src} passHref>
-						<a
-							className={classes.insert_img_wrapper}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Image
-								className={classes.insert_img}
-								src={slideshowWpAdmin}
-								alt="slideshowWpAdmin"
-								width="1097"
-								height="780"
-								title="Plugin Screenshot"
-							/>
-						</a>
-					</Link>
+					<Link
+                        href={slideshowWpAdmin.src}
+                        passHref
+                        className={classes.insert_img_wrapper}
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <Image
+                            className={classes.insert_img}
+                            src={slideshowWpAdmin}
+                            alt="slideshowWpAdmin"
+                            width="1097"
+                            height="780"
+                            title="Plugin Screenshot"
+                        />
+
+                    </Link>
 					<h4>Front End</h4>A simple slideshow will be added whenever the user
 					adds the defined{" "}
 					<a
@@ -230,26 +233,27 @@ function CustomWordPressPlugins() {
 					</a>
 					.<br />
 					<br />
-					<Link href={slideshowWpFrontend.src} passHref>
-						<a
-							className={classes.insert_img_wrapper}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<Image
-								className={classes.insert_img}
-								src={slideshowWpFrontend}
-								alt="slideshowWpFrontend"
-								width="763"
-								height="436"
-								title="Plugin Screenshot"
-							/>
-						</a>
-					</Link>
+					<Link
+                        href={slideshowWpFrontend.src}
+                        passHref
+                        className={classes.insert_img_wrapper}
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <Image
+                            className={classes.insert_img}
+                            src={slideshowWpFrontend}
+                            alt="slideshowWpFrontend"
+                            width="763"
+                            height="436"
+                            title="Plugin Screenshot"
+                        />
+
+                    </Link>
 				</div>
 			</div>
-		</div>
-	);
+        </div>)
+    );
 }
 
 export default CustomWordPressPlugins;

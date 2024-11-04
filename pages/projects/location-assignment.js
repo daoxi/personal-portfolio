@@ -7,17 +7,17 @@ import Head from "next/head";
 
 function LocationAssignment() {
 	return (
-		<div>
-			<Head>
+        (<div>
+            <Head>
 				<title>Location-Map-Time Assignment</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-			<MainNavigation></MainNavigation>
-			<div className={classes.introcontainer}>
-				<Link href="/projects" passHref>
+            <MainNavigation></MainNavigation>
+            <div className={classes.introcontainer}>
+				<Link href="/projects" passHref legacyBehavior>
 					<button className={classes.btnback}>Go back to Projects</button>
 				</Link>
 				<h1 className={classes.title}>Location-Map-Time Assignment</h1>
@@ -65,8 +65,8 @@ function LocationAssignment() {
 					<YoutubeEmbed embedId="wiBBD6WVMKM" />
 				</div>
 			</div>
-		</div>
-	);
+        </div>)
+    );
 }
 
 export default LocationAssignment;

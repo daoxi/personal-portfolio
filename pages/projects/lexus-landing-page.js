@@ -7,7 +7,7 @@ import Head from "next/head";
 
 function LexusLandingPage() {
   return (
-    <div>
+    (<div>
       <Head>
         <title>Lexus Landing Page</title>
         <meta
@@ -17,7 +17,7 @@ function LexusLandingPage() {
       </Head>
       <MainNavigation></MainNavigation>
       <div className={classes.introcontainer}>
-        <Link href="/projects" passHref>
+        <Link href="/projects" passHref legacyBehavior>
           <button className={classes.btnback}>Go back to Projects</button>
         </Link>
         <h1 className={classes.title}>Lexus Landing Page</h1>
@@ -65,7 +65,7 @@ function LexusLandingPage() {
           <YoutubeEmbed embedId="joLsnVVhvfU" />
         </div>
       </div>
-    </div>
+    </div>)
   );
 }
 
