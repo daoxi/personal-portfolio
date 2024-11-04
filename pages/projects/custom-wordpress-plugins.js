@@ -9,21 +9,20 @@ import developerWpAdminMetabox from "../../public/assets/custom-wordpress-plugin
 import developerWpFrontend from "../../public/assets/custom-wordpress-plugins-page/developer-wp-frontend.png";
 import slideshowWpAdmin from "../../public/assets/custom-wordpress-plugins-page/slideshow-wp-admin.png";
 import slideshowWpFrontend from "../../public/assets/custom-wordpress-plugins-page/slideshow-wp-frontend.png";
+import BackToProjects from "../components/BackToProjects";
 
 function CustomWordPressPlugins() {
 	return (
-        (<div>
-            <Head>
+		<div>
+			<Head>
 				<title>Custom WordPress Plugins</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-            <div className={classes.introcontainer}>
-				<Link href="/projects" passHref legacyBehavior>
-					<button className={classes.btnback}>Go back to Projects</button>
-				</Link>
+			<div className={classes.introcontainer}>
+				<BackToProjects />
 				<h1 className={classes.title}>Custom WordPress Plugins</h1>
 
 				<div className={classes.intro}>
@@ -120,22 +119,21 @@ function CustomWordPressPlugins() {
 					<br />
 					<br />
 					<Link
-                        href={developerWpAdminMetabox.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={developerWpAdminMetabox}
-                            alt="developerWpAdminMetabox"
-                            width="496"
-                            height="187"
-                            title="Plugin Screenshot"
-                        />
-
-                    </Link>
+						href={developerWpAdminMetabox.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={developerWpAdminMetabox}
+							alt="developerWpAdminMetabox"
+							width="496"
+							height="187"
+							title="Plugin Screenshot"
+						/>
+					</Link>
 					<h4>Front End</h4>A box will be displayed at the end of each post, it
 					will display a list of users that were selected for that specific
 					post, with their{" "}
@@ -161,22 +159,21 @@ function CustomWordPressPlugins() {
 					<br />
 					<br />
 					<Link
-                        href={developerWpFrontend.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={developerWpFrontend}
-                            alt="developerWpFrontend"
-                            width="674"
-                            height="406"
-                            title="Plugin Screenshot"
-                        />
-
-                    </Link>
+						href={developerWpFrontend.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={developerWpFrontend}
+							alt="developerWpFrontend"
+							width="674"
+							height="406"
+							title="Plugin Screenshot"
+						/>
+					</Link>
 					<h2>Trader Slideshow Plugin</h2>A plugin that allows the admin to add,
 					remove, reorder images to create a slideshow that can be added to any
 					post/page.
@@ -194,22 +191,21 @@ function CustomWordPressPlugins() {
 					<br />
 					<br />
 					<Link
-                        href={slideshowWpAdmin.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={slideshowWpAdmin}
-                            alt="slideshowWpAdmin"
-                            width="1097"
-                            height="780"
-                            title="Plugin Screenshot"
-                        />
-
-                    </Link>
+						href={slideshowWpAdmin.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={slideshowWpAdmin}
+							alt="slideshowWpAdmin"
+							width="1097"
+							height="780"
+							title="Plugin Screenshot"
+						/>
+					</Link>
 					<h4>Front End</h4>A simple slideshow will be added whenever the user
 					adds the defined{" "}
 					<a
@@ -232,26 +228,25 @@ function CustomWordPressPlugins() {
 					.<br />
 					<br />
 					<Link
-                        href={slideshowWpFrontend.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={slideshowWpFrontend}
-                            alt="slideshowWpFrontend"
-                            width="763"
-                            height="436"
-                            title="Plugin Screenshot"
-                        />
-
-                    </Link>
+						href={slideshowWpFrontend.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={slideshowWpFrontend}
+							alt="slideshowWpFrontend"
+							width="763"
+							height="436"
+							title="Plugin Screenshot"
+						/>
+					</Link>
 				</div>
 			</div>
-        </div>)
-    );
+		</div>
+	);
 }
 
 export default CustomWordPressPlugins;

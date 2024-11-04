@@ -4,20 +4,20 @@ import Link from "next/link";
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import Head from "next/head";
 
+import BackToProjects from "../components/BackToProjects";
+
 function LocationAssignment() {
 	return (
-        (<div>
-            <Head>
+		<div>
+			<Head>
 				<title>Location-Map-Time Assignment</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-            <div className={classes.introcontainer}>
-				<Link href="/projects" passHref legacyBehavior>
-					<button className={classes.btnback}>Go back to Projects</button>
-				</Link>
+			<div className={classes.introcontainer}>
+				<BackToProjects />
 				<h1 className={classes.title}>Location-Map-Time Assignment</h1>
 
 				<p className={classes.intro}>
@@ -63,8 +63,8 @@ function LocationAssignment() {
 					<YoutubeEmbed embedId="wiBBD6WVMKM" />
 				</div>
 			</div>
-        </div>)
-    );
+		</div>
+	);
 }
 
 export default LocationAssignment;

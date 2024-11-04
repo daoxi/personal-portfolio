@@ -3,21 +3,20 @@ import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import PdfEmbed from "../components/PdfEmbed";
+import BackToProjects from "../components/BackToProjects";
 
 function CraigsDota() {
 	return (
-        (<div>
-            <Head>
+		<div>
+			<Head>
 				<title>M.Eng. Project: CraigsDota</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-            <div className={classes.introcontainer}>
-				<Link href="/projects" passHref legacyBehavior>
-					<button className={classes.btnback}>Go back to Projects</button>
-				</Link>
+			<div className={classes.introcontainer}>
+				<BackToProjects />
 				<h1 className={classes.title}>CraigsDota</h1>
 
 				<p className={classes.intro}>
@@ -46,7 +45,8 @@ function CraigsDota() {
 						rel="noopener noreferrer"
 					>
 						Bootstrap
-					</a>{" "}, also{" "}
+					</a>{" "}
+					, also{" "}
 					<a
 						href="https://firebase.google.com/"
 						target="_blank"
@@ -108,8 +108,8 @@ function CraigsDota() {
 					<PdfEmbed embedPath="https://daoxisun.com/resources/CraigsDota_project_report.pdf" />
 				</div>
 			</div>
-        </div>)
-    );
+		</div>
+	);
 }
 
 export default CraigsDota;

@@ -8,20 +8,20 @@ import Image from "next/legacy/image";
 import slidesScreenshot from "../../public/assets/image-slides-generator-page/image-slides-generator-screenshot.png";
 import slidesScreenshot2 from "../../public/assets/image-slides-generator-page/image-slides-generator-screenshot2.png";
 
+import BackToProjects from "../components/BackToProjects";
+
 function ImageSlidesGenerator() {
 	return (
-        (<div>
-            <Head>
+		<div>
+			<Head>
 				<title>Image Slides Generator</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-            <div className={classes.introcontainer}>
-				<Link href="/projects" passHref legacyBehavior>
-					<button className={classes.btnback}>Go back to Projects</button>
-				</Link>
+			<div className={classes.introcontainer}>
+				<BackToProjects />
 				<h1 className={classes.title}>Image Slides Generator</h1>
 
 				<p className={classes.intro}>
@@ -84,47 +84,46 @@ function ImageSlidesGenerator() {
 					</a>{" "}
 					to access the source code in the repository.
 					<br />
-					The no-access-key version of Unsplash API used by the demo has been discontinued
-						{/*used to be hosted on https://daoxisun.com/resources/image-slides-generator/ */}
+					The no-access-key version of Unsplash API used by the demo has been
+					discontinued
+					{/*used to be hosted on https://daoxisun.com/resources/image-slides-generator/ */}
 					, the screenshots of the project are below:
 				</p>
 				<Link
-                    href={slidesScreenshot.src}
-                    passHref
-                    className={classes.insert_img_wrapper}
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <Image
-                        className={classes.insert_img}
-                        src={slidesScreenshot}
-                        alt="slidesScreenshot"
-                        width="1498"
-                        height="892"
-                        title="Slides Screenshot"
-                    />
-
-                </Link>
+					href={slidesScreenshot.src}
+					passHref
+					className={classes.insert_img_wrapper}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Image
+						className={classes.insert_img}
+						src={slidesScreenshot}
+						alt="slidesScreenshot"
+						width="1498"
+						height="892"
+						title="Slides Screenshot"
+					/>
+				</Link>
 				<Link
-                    href={slidesScreenshot2.src}
-                    passHref
-                    className={classes.insert_img_wrapper}
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <Image
-                        className={classes.insert_img}
-                        src={slidesScreenshot2}
-                        alt="slidesScreenshot2"
-                        width="1498"
-                        height="892"
-                        title="Slides Screenshot Fullscreen"
-                    />
-
-                </Link>
+					href={slidesScreenshot2.src}
+					passHref
+					className={classes.insert_img_wrapper}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<Image
+						className={classes.insert_img}
+						src={slidesScreenshot2}
+						alt="slidesScreenshot2"
+						width="1498"
+						height="892"
+						title="Slides Screenshot Fullscreen"
+					/>
+				</Link>
 			</div>
-        </div>)
-    );
+		</div>
+	);
 }
 
 export default ImageSlidesGenerator;

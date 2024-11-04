@@ -10,20 +10,20 @@ import getemViewNote from "../../public/assets/getem-project-page/getem-view-not
 import getemEditNote from "../../public/assets/getem-project-page/getem-edit-note.png";
 import getemEditNoteEditTags from "../../public/assets/getem-project-page/getem-edit-note-edit-tags.png";
 
+import BackToProjects from "../components/BackToProjects";
+
 function GetemProject() {
 	return (
-        (<div>
-            <Head>
+		<div>
+			<Head>
 				<title>GetEm Project (Markdown Note App)</title>
 				<meta
 					name="description"
 					content="Learn more about this project here."
 				/>
 			</Head>
-            <div className={classes.introcontainer}>
-				<Link href="/projects" passHref legacyBehavior>
-					<button className={classes.btnback}>Go back to Projects</button>
-				</Link>
+			<div className={classes.introcontainer}>
+				<BackToProjects />
 				<h1 className={classes.title}>GetEm Project - Markdown Note App</h1>
 
 				<p className={classes.intro}>
@@ -48,7 +48,8 @@ function GetemProject() {
 					.
 					<br />
 					<br />
-					Here are a few screenshots (it&apos;s still recommended to check out the{" "}
+					Here are a few screenshots (it&apos;s still recommended to check out
+					the{" "}
 					<a
 						href="https://getem.daoxisun.com"
 						target="_blank"
@@ -60,83 +61,79 @@ function GetemProject() {
 					<br />
 					<br />
 					<Link
-                        href={getemHomeManage.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={getemHomeManage}
-                            alt="GetEm homepage manage mode"
-                            width="1170"
-                            height="632"
-                            title="GetEm homepage manage mode"
-                        />
-
-                    </Link>
+						href={getemHomeManage.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={getemHomeManage}
+							alt="GetEm homepage manage mode"
+							width="1170"
+							height="632"
+							title="GetEm homepage manage mode"
+						/>
+					</Link>
 					<br />
 					<br />
 					<Link
-                        href={getemViewNote.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={getemViewNote}
-                            alt="GetEm view note"
-                            width="1170"
-                            height="900"
-                            title="GetEm view note"
-                        />
-
-                    </Link>
+						href={getemViewNote.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={getemViewNote}
+							alt="GetEm view note"
+							width="1170"
+							height="900"
+							title="GetEm view note"
+						/>
+					</Link>
 					<br />
 					<br />
 					<Link
-                        href={getemEditNote.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={getemEditNote}
-                            alt="GetEm edit note"
-                            width="750"
-                            height="800"
-                            title="GetEm edit note"
-                        />
-
-                    </Link>
+						href={getemEditNote.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={getemEditNote}
+							alt="GetEm edit note"
+							width="750"
+							height="800"
+							title="GetEm edit note"
+						/>
+					</Link>
 					<br />
 					<br />
 					<Link
-                        href={getemEditNoteEditTags.src}
-                        passHref
-                        className={classes.insert_img_wrapper}
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        <Image
-                            className={classes.insert_img}
-                            src={getemEditNoteEditTags}
-                            alt="GetEm edit tags on edit note page"
-                            width="750"
-                            height="800"
-                            title="GetEm edit tags on edit note page"
-                        />
-
-                    </Link>
+						href={getemEditNoteEditTags.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={getemEditNoteEditTags}
+							alt="GetEm edit tags on edit note page"
+							width="750"
+							height="800"
+							title="GetEm edit tags on edit note page"
+						/>
+					</Link>
 				</p>
 			</div>
-        </div>)
-    );
+		</div>
+	);
 }
 
 export default GetemProject;
