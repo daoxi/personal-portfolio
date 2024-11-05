@@ -102,7 +102,7 @@ function CraigsDota() {
 					>
 						project report
 					</a>{" "}
-					below (uses the browser&#39;s PDF viewer).
+					below.
 				</p>
 				<div className={classes.pdfviewer}>
 					<PdfEmbed embedPath="https://daoxisun.com/resources/CraigsDota_project_report.pdf" />

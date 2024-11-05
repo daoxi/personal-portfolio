@@ -6,24 +6,29 @@ import PropTypes from "prop-types";
 import classes from "./PdfEmbed.module.css";
 
 const PdfEmbed = ({ embedPath }) => (
-  <div className={classes.pdfembed}>
-    <object data={embedPath} type="application/pdf" width="100%" height="100%">
-      <iframe src={embedPath} width="100%" height="100%">
-        {/* Handle the situation when the browser does not have a PDF viewer */}
-        <p>
-          This browser does not have a PDF viewer, but you can still use{" "}
-          <a href={embedPath} target="_blank" rel="noopener noreferrer">
-            this link
-          </a>{" "}
-          to access the PDF file.
-        </p>
-      </iframe>
-    </object>
-  </div>
+	<div className={classes.pdfembed}>
+		<object data={embedPath} type="application/pdf" width="100%" height="100%">
+			{/* Handle the situation when the browser does not have a built-in PDF viewer (i.e. fallback), 
+				note that using <iframe>...</iframe> instead might cause issue when refreshing the page (in Next.js) because iframe technically can't contain any child element */}
+			{/*
+				<iframe src={embedPath} width="100%" height="100%">
+				*/}
+			<p>
+				Your browser does not support viewing PDF, but you can still use{" "}
+				<a href={embedPath} target="_blank" rel="noopener noreferrer">
+					this link
+				</a>{" "}
+				to access the PDF file.
+			</p>
+			{/*
+			</iframe>
+			*/}
+		</object>
+	</div>
 );
 
 PdfEmbed.propTypes = {
-  embedPath: PropTypes.string.isRequired,
+	embedPath: PropTypes.string.isRequired,
 };
 
 export default PdfEmbed;
