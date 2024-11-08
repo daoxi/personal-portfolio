@@ -28,7 +28,7 @@ function Introduction() {
 					(Canada) with a Master’s degree in Software Engineering.
 				</p>
 				<p>This website lists some of my projects over the years.</p>
-				<Link href="/projects" passHref legacyBehavior>
+				<Link href="/projects" passHref>
 					<button className={classes.btn1}>Learn More</button>
 				</Link>
 			</div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function BackToProjects() {
 	return (
-		<Link href="/projects" passHref legacyBehavior>
+		<Link href="/projects" passHref>
 			<button className={classes["btn-back"]}>◄ Go back to Projects</button>
 		</Link>
 	);

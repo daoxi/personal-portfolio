@@ -54,11 +54,15 @@
 	overflow: auto;
 }
 
-.card .card-btn {
+.card .card-btn-container {
+	margin: 1rem;
+}
+
+.card .card-btn-container .card-btn {
 	padding: 1rem;
 	font-weight: bold;
 	font-size: 1.8rem;
-	margin: 1rem;
+	width: 100%;
 	border: 0.3rem solid var(--main-card-color);
 	border-radius: 1rem;
 	background: transparent;

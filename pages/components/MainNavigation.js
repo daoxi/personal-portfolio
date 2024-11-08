@@ -30,7 +30,7 @@ function MainNavigation() {
 	return (
 		<header className={classes.navbar}>
 			<div className={classes["nav-left-intro"]}>
-				<Link href="/" passHref legacyBehavior>
+				<Link href="/" passHref>
 					<div>
 						<div className={classes.text1}>
 							Daoxi Sun<br></br>
