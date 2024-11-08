@@ -19,16 +19,16 @@ a {
 /* responsive design, optimize for mobile device */
 @media only screen and (max-width: 1024px) {
   html {
-    font-size:80%;
+    font-size:90%;
   }
 }
 @media only screen and (max-width: 640px) {
   html {
-    font-size:60%;
+    font-size:80%;
   }
 }
 @media only screen and (max-width: 480px) {
   html {
-    font-size:45%;
+    font-size:65%;
   }
 }
