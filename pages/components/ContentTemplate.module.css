@@ -1,0 +1,90 @@
+/* template css used for most content */
+
+.content-container {
+	display: block;
+	width: 100%;
+	--content-max-width: 1400px; /* change this variable by using "style" prop in the component that needs to be wider/narrower */
+	max-width: var(--content-max-width);
+	justify-content: center;
+}
+
+.title {
+	/* gradient text */
+	font-size: 4rem;
+	background: -webkit-linear-gradient(45deg, #09009f, #00ff95 50%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* body content */
+.body {
+	font-size: 1.6rem;
+}
+
+.body p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.body a {
+	color: blue;
+}
+
+.body .spacer1 {
+	margin-bottom: 1em;
+}
+.body .spacer2 {
+	margin-bottom: 2em;
+}
+.body .spacer3 {
+	margin-bottom: 3em;
+}
+
+.body .insert_img_wrapper {
+	position: relative; /* This is needed when layout="fill" is used in the child Next.js Image element */
+
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	/* The following shows the wrapper's border to help debugging if needed */
+	/* border: 5px solid #555; */
+}
+
+.body .insert_img_wrapper .insert_img {
+	max-width: 100%;
+	height: auto; /* maintain the aspect ratio */
+
+	/* The following tests whether the image styling is working */
+	/* filter: invert(1); */
+}
+
+.youtube-video {
+	margin: 0 0 0 0; /* when needed, adjust the margin here */
+}
+
+.pdf-viewer {
+	margin: 0 0 0 0; /* when needed, adjust the margin here */
+}
+
+.btn1 {
+	width: 16rem;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #ffffff;
+	cursor: pointer;
+	height: 4rem;
+	text-align: center;
+	border: none;
+	background-size: 200% 100%; /* extra horizontal size for the hover animation later*/
+	border-radius: 2rem;
+	background-image: linear-gradient(45deg, #09009f, #00ff95 70%);
+	box-shadow: 0 0.2rem 1.25rem #00b8e6;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.btn1:hover {
+	background-position: 100% 0;
+	transition: all 0.5s ease-in-out;
+}

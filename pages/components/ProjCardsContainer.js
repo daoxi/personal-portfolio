@@ -15,7 +15,7 @@ import projThumbTestPortrait from "../../public/assets/test-portrait.png";
 
 function ProjCardsContainer() {
 	return (
-		<div className={classes["card-container"]}>
+		<div className={classes["cards-container"]}>
 			<ProjCard
 				tags={["React", "TypeScript", "Bootstrap", "SCSS"]}
 				img={projThumbGetem}

@@ -1,5 +1,5 @@
 /* the image slides generator intro page */
-import classes from "../components/IntroTemplate.module.css";
+import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
@@ -20,74 +20,77 @@ function ImageSlidesGenerator() {
 					content="Learn more about this project here."
 				/>
 			</Head>
-			<div className={classes.introcontainer}>
+			<div className={classes["content-container"]}>
 				<BackToProjects />
 				<h1 className={classes.title}>Image Slides Generator</h1>
 
-				<p className={classes.intro}>
-					A webpage that allows the users to interact with slides generated
-					using random room images (sourced using certain keywords) fetched from{" "}
-					<a
-						href="https://unsplash.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Unsplash API
-					</a>
-					, some features were implemented by utilizing{" "}
-					<a
-						href="https://jquery.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						jQuery
-					</a>{" "}
-					and{" "}
-					<a
-						href="https://swiperjs.com/swiper-api"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Swiper API
-					</a>
-					.<br />
-					<br />
-					Some of the details include:
-				</p>
-				<ul className={classes.list}>
-					<li>
-						Switch slide by either dragging any slide, or clicking on either
-						left/right (blurred) slide, or pressing &quot;←&quot;/&quot;→&quot;
-						on keyboard{" "}
-					</li>
-					<li>
-						Slide info updates dynamically after switching slide, message
-						appears when adding/removing a slide.
-					</li>
-					<li>
-						The &quot;+&quot; sign used to add a new slide only appears when
-						reaching the last slide
-					</li>
-					<li>
-						Transitions for cursor hovering/clicking on slides/buttons, for
-						entering/exiting fullscreen slide, etc.
-					</li>
-					<li>and more...</li>
-				</ul>
-				<p className={classes.intro}>
-					<a
-						href="https://github.com/daoxi/image-slides-generator/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Click here
-					</a>{" "}
-					to access the source code in the repository.
-					<br />
-					The no-access-key version of Unsplash API used by the demo has been
-					discontinued
-					{/*used to be hosted on https://daoxisun.com/resources/image-slides-generator/ */}
-					, the screenshots of the project are below:
+				<div className={classes.body}>
+					<p>
+						A webpage that allows the users to interact with slides generated
+						using random room images (sourced using certain keywords) fetched
+						from{" "}
+						<a
+							href="https://unsplash.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Unsplash API
+						</a>
+						, some features were implemented by utilizing{" "}
+						<a
+							href="https://jquery.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							jQuery
+						</a>{" "}
+						and{" "}
+						<a
+							href="https://swiperjs.com/swiper-api"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Swiper API
+						</a>
+						.
+					</p>
+					<p>Some of the details include:</p>
+					<ul className={classes.list}>
+						<li>
+							Switch slide by either dragging any slide, or clicking on either
+							left/right (blurred) slide, or pressing
+							&quot;←&quot;/&quot;→&quot; on keyboard{" "}
+						</li>
+						<li>
+							Slide info updates dynamically after switching slide, message
+							appears when adding/removing a slide.
+						</li>
+						<li>
+							The &quot;+&quot; sign used to add a new slide only appears when
+							reaching the last slide
+						</li>
+						<li>
+							Transitions for cursor hovering/clicking on slides/buttons, for
+							entering/exiting fullscreen slide, etc.
+						</li>
+						<li>and more...</li>
+					</ul>
+					<p>
+						<a
+							href="https://github.com/daoxi/image-slides-generator/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Click here
+						</a>{" "}
+						to access the source code in the repository.
+					</p>
+					<p>
+						The no-access-key version of Unsplash API used by the demo has been
+						discontinued
+						{/*used to be hosted on https://daoxisun.com/resources/image-slides-generator/ */}
+						, the screenshots of the project are below:
+					</p>
 					<Link
 						href={slidesScreenshot.src}
 						passHref
@@ -104,6 +107,7 @@ function ImageSlidesGenerator() {
 							title="Slides Screenshot"
 						/>
 					</Link>
+					<div className={classes.spacer1}></div>
 					<Link
 						href={slidesScreenshot2.src}
 						passHref
@@ -120,7 +124,7 @@ function ImageSlidesGenerator() {
 							title="Slides Screenshot Fullscreen"
 						/>
 					</Link>
-				</p>
+				</div>
 			</div>
 		</div>
 	);

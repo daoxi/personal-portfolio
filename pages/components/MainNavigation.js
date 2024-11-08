@@ -13,7 +13,7 @@ function MainNavigation() {
 		const router = useRouter();
 		let currentRoute = router.pathname;
 		let setClass = "";
-		const classesPropertyName = "currentpage";
+		const classesPropertyName = "current-page";
 		//first, deal with the special situation where the route to be check is the homepage route
 		if (linkRoute === "/") {
 			setClass = currentRoute === linkRoute ? classesPropertyName : "";
@@ -29,7 +29,7 @@ function MainNavigation() {
 
 	return (
 		<header className={classes.navbar}>
-			<div className={classes.navleftintro}>
+			<div className={classes["nav-left-intro"]}>
 				<Link href="/" passHref legacyBehavior>
 					<div>
 						<div className={classes.text1}>
@@ -39,14 +39,14 @@ function MainNavigation() {
 					</div>
 				</Link>
 			</div>
-			<ul className={classes.navleftlist}>
-				<li className={classes.navleftlink}>
+			<ul className={classes["nav-left-list"]}>
+				<li className={classes["nav-left-link"]}>
 					<Link href="/" passHref className={classes[CheckLink("/")]}>
 						Home
 						{/* call the function to check the route, and style the element conditionally */}
 					</Link>
 				</li>
-				<li className={classes.navleftlink}>
+				<li className={classes["nav-left-link"]}>
 					<Link
 						href="/projects"
 						passHref
@@ -55,13 +55,13 @@ function MainNavigation() {
 						Projects
 					</Link>
 				</li>
-				<li className={classes.navleftlink}>
+				<li className={classes["nav-left-link"]}>
 					<Link href="/more" passHref className={classes[CheckLink("/more")]}>
 						More
 					</Link>
 				</li>
 			</ul>
-			<ul className={classes.navrightlist}>
+			<ul className={classes["nav-right-list"]}>
 				<li>
 					<a
 						href="https://github.com/daoxi"
@@ -69,7 +69,7 @@ function MainNavigation() {
 						rel="noopener noreferrer"
 					>
 						<Image
-							className={classes.navrighticon}
+							className={classes["nav-right-icon"]}
 							src={githubIcon}
 							alt="github_icon"
 							width="200"
@@ -84,7 +84,7 @@ function MainNavigation() {
 						rel="noopener noreferrer"
 					>
 						<Image
-							className={classes.navrighticon}
+							className={classes["nav-right-icon"]}
 							src={linkedinIcon}
 							alt="linkedin_icon"
 							width="200"

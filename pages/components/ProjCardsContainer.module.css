@@ -1,8 +1,10 @@
-.card-container {
+.cards-container {
   /* auto fitting infinite project cards into the grid container*/
   display: flex;
 	row-gap: 3rem;
 	column-gap: 2rem;
 	flex-wrap: wrap;
   justify-content: space-around;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }

@@ -1,4 +1,4 @@
-.videoresponsive {
+.video-container {
   overflow: hidden;
   padding-bottom: 56.25%; /* Controls the height of the video in proportion to its width, use 56.25% for 16:9 original aspect ratio, as 56.25% is 9/16*/
   position: relative;
@@ -6,10 +6,11 @@
   display: block;
 }
 
-.videoresponsive iframe {
+.video-container iframe {
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
   position: absolute;
+	border: 0px; /* to replace the deprecated "frameBorder="0"" attribute on iframe element */
 }

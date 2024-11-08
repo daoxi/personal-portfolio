@@ -11,13 +11,13 @@
 	width: 24rem;
 }
 
-.card .card_img {
+.card .card-img {
 	width: 100%; /* card image width and height are set by the "width" and "height" props passed to the component, image file's width:height should be 2:1 */
 	height: auto; /* maintain the aspect ratio */
 	object-fit: cover;
 }
 
-.card .card_title {
+.card .card-title {
 	text-align: center;
 }
 
@@ -49,12 +49,12 @@
 }
 */
 
-.card .card_description {
+.card .card-description {
 	margin: 0 1rem;
 	overflow: auto;
 }
 
-.card .card_btn {
+.card .card-btn {
 	padding: 1rem;
 	font-weight: bold;
 	font-size: 1.8rem;
@@ -70,7 +70,7 @@
 	transform: scale(1.05);
 }
 
-.card .card_btn:hover {
+.card .card-btn:hover {
 	background-color: var(--main-card-color);
 	color: white;
 	cursor: pointer;

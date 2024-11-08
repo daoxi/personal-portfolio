@@ -1,5 +1,5 @@
 /* the Getem project page */
-import classes from "../components/IntroTemplate.module.css";
+import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
@@ -22,44 +22,44 @@ function GetemProject() {
 					content="Learn more about this project here."
 				/>
 			</Head>
-			<div className={classes.introcontainer}>
+			<div className={classes["content-container"]}>
 				<BackToProjects />
 				<h1 className={classes.title}>GetEm Project - Markdown Note App</h1>
 
-				<p className={classes.intro}>
-					This is my{" "}
-					<strong>most recent and currently maintained project</strong>, you can
-					check out the{" "}
-					<a
-						href="https://getem.daoxisun.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						live demo here
-					</a>{" "}
-					(mobile/touch friendly), or{" "}
-					<a
-						href="https://github.com/daoxi/GetEm"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						its repository here
-					</a>
-					.
-					<br />
-					<br />
-					Here are a few screenshots (it&apos;s still recommended to check out
-					the{" "}
-					<a
-						href="https://getem.daoxisun.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						live demo
-					</a>{" "}
-					instead because it&apos;s more comprehensive and up-to-date):
-					<br />
-					<br />
+				<div className={classes.body}>
+					<p>
+						This is my{" "}
+						<strong>most recent and currently maintained project</strong>, you
+						can check out the{" "}
+						<a
+							href="https://getem.daoxisun.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							live demo here
+						</a>{" "}
+						(mobile/touch friendly), or{" "}
+						<a
+							href="https://github.com/daoxi/GetEm"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							its repository here
+						</a>
+						.
+					</p>
+					<p>
+						Here are a few screenshots (it&apos;s still recommended to check out
+						the{" "}
+						<a
+							href="https://getem.daoxisun.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							live demo
+						</a>{" "}
+						instead because it&apos;s more comprehensive and up-to-date):
+					</p>
 					<Link
 						href={getemHomeManage.src}
 						passHref
@@ -76,8 +76,7 @@ function GetemProject() {
 							title="GetEm homepage manage mode"
 						/>
 					</Link>
-					<br />
-					<br />
+					<div className={classes.spacer1}></div>
 					<Link
 						href={getemViewNote.src}
 						passHref
@@ -94,8 +93,7 @@ function GetemProject() {
 							title="GetEm view note"
 						/>
 					</Link>
-					<br />
-					<br />
+					<div className={classes.spacer1}></div>
 					<Link
 						href={getemEditNote.src}
 						passHref
@@ -112,8 +110,7 @@ function GetemProject() {
 							title="GetEm edit note"
 						/>
 					</Link>
-					<br />
-					<br />
+					<div className={classes.spacer1}></div>
 					<Link
 						href={getemEditNoteEditTags.src}
 						passHref
@@ -130,7 +127,7 @@ function GetemProject() {
 							title="GetEm edit tags on edit note page"
 						/>
 					</Link>
-				</p>
+				</div>
 			</div>
 		</div>
 	);

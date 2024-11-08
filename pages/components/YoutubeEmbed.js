@@ -4,7 +4,7 @@ import classes from "./YoutubeEmbed.module.css";
 
 const YoutubeEmbed = ({ embedId }) => (
 	<>
-		<div className={classes.videoresponsive}>
+		<div className={classes["video-container"]}>
 			<iframe
 				credentialless="true" //making TrustedHTML assignment no longer required (both TrustedHTML assignment and credentialless attribute are only supported on Chromium-based browsers as of 2024Nov5)
 				width="1920"
