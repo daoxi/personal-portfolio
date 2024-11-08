@@ -1,105 +1,102 @@
 .navbar {
-  width: 100%;
-  background-color: #0086b3; /* Only for IE browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #00004d, #006666);
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+	width: 100%;
+	background-color: #0086b3; /* Only for IE browsers that do not support gradients */
+	background-image: linear-gradient(to bottom right, #00004d, #006666);
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
 }
 
 .navbar .navleftintro {
-  float: center;
-  margin: 1rem;
-  cursor: pointer;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+	float: center;
+	margin: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 /* text1 is for 1st line of text */
 .navbar .navleftintro .text1 {
-  font-size: 3rem;
-  color: #00cc66;
+	font-size: 3rem;
+	color: #00cc66;
 }
 
 /* text2 is for 2nd line of text */
 .navbar .navleftintro .text2 {
-  font-size: 2rem;
-  color: #ffffff;
+	font-size: 2rem;
+	color: #ffffff;
 }
 
 .navbar .navleftlist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  /* increase flexbox size in order to align properly */
-  flex-grow: 1;
-  justify-content: space-around;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	/* increase flexbox size in order to align properly */
+	flex-grow: 1;
+	justify-content: space-around;
 }
 
 .navbar .navrightlist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
 }
 
 .navbar .navleftlink {
-  margin-top: 4rem;
-  font-size: 2rem;
-  color: #ffffff;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+	margin-top: 4rem;
+	font-size: 2rem;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 .navbar .navleftlink .currentpage {
-  color: #00cc66;
+	color: #00cc66;
 }
 
-.navbar .navrightlist .iconwrapper {
-  margin: 1rem; /* set margin in wrapper because the wrapped next/image Image component is absolutely positioned */
-  /* set image dimensions with relative length unit to facilitate responsive design */
-  height: 3rem;
-  width: 3rem;
+.navbar .navrightlist .navrighticon {
+	margin: 1rem;
+	/* set image dimensions with relative length unit to facilitate responsive design */
+	height: 3rem;
+	width: 3rem;
+	cursor: pointer;
+	/* invert color of image to suit a darker background */
+	filter: invert(1);
 }
 
-.navbar .navrightlist .iconwrapper .navrighticon {
-  cursor: pointer;
-  /* invert color of image to suit a darker background */
-  filter: invert(1);
-}
-
-.navbar .navrightlist .iconwrapper .navrighticon:hover {
+.navbar .navrightlist .navrighticon:hover {
 	transform: scale(0.9);
 }
 
 /* text decoration (underline in links) can only be removed from anchor tag */
 .navbar a {
-  text-decoration: none;
-  cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /* disable the default effect of turning purple when clicked */
 .navbar a:visited {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 /* These have to come after the a:visited selector*/
 .navbar a:hover,
 .navbar a.active {
-  text-shadow: 0 0 1rem white;
+	text-shadow: 0 0 1rem white;
 }
 
 /* responsive design, optimize for mobile device */
 @media only screen and (max-width: 1024px) {
-  .navbar {
-    flex-direction: column;
-  }
-  .navbar .navleftlink {
-    margin-top: 1rem;
-  }
+	.navbar {
+		flex-direction: column;
+	}
+	.navbar .navleftlink {
+		margin-top: 1rem;
+	}
 }

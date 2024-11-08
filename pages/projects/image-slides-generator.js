@@ -2,7 +2,7 @@
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 /* Import the images to be inserted into the page */
 import slidesScreenshot from "../../public/assets/image-slides-generator-page/image-slides-generator-screenshot.png";
@@ -88,39 +88,39 @@ function ImageSlidesGenerator() {
 					discontinued
 					{/*used to be hosted on https://daoxisun.com/resources/image-slides-generator/ */}
 					, the screenshots of the project are below:
+					<Link
+						href={slidesScreenshot.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={slidesScreenshot}
+							alt="slidesScreenshot"
+							width="1498"
+							height="892"
+							title="Slides Screenshot"
+						/>
+					</Link>
+					<Link
+						href={slidesScreenshot2.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={slidesScreenshot2}
+							alt="slidesScreenshot2"
+							width="1498"
+							height="892"
+							title="Slides Screenshot Fullscreen"
+						/>
+					</Link>
 				</p>
-				<Link
-					href={slidesScreenshot.src}
-					passHref
-					className={classes.insert_img_wrapper}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image
-						className={classes.insert_img}
-						src={slidesScreenshot}
-						alt="slidesScreenshot"
-						width="1498"
-						height="892"
-						title="Slides Screenshot"
-					/>
-				</Link>
-				<Link
-					href={slidesScreenshot2.src}
-					passHref
-					className={classes.insert_img_wrapper}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image
-						className={classes.insert_img}
-						src={slidesScreenshot2}
-						alt="slidesScreenshot2"
-						width="1498"
-						height="892"
-						title="Slides Screenshot Fullscreen"
-					/>
-				</Link>
 			</div>
 		</div>
 	);

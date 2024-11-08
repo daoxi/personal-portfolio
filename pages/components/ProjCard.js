@@ -1,7 +1,7 @@
 /* individual project cards */
 import classes from "./ProjCard.module.css";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 function ProjCard(props) {
   return (

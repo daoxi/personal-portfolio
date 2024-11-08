@@ -30,12 +30,16 @@
 
 .intro .insert_img_wrapper {
 	position: relative; /* This is needed when layout="fill" is used in the child Next.js Image element */
+
 	/* The following shows the wrapper's border to help debugging if needed */
 	/* border: 5px solid #555; */
 }
 
 .intro .insert_img_wrapper .insert_img {
-	margin: auto;
+	max-width: 100%;
+	height: auto; /* maintain the aspect ratio */
+	margin-top: 1rem;
+
 	/* The following tests whether the image styling is working */
 	/* filter: invert(1); */
 }

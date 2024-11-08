@@ -13,6 +13,7 @@
 
 .card .card_img {
 	width: 100%; /* card image width and height are set by the "width" and "height" props passed to the component, image file's width:height should be 2:1 */
+	height: auto; /* maintain the aspect ratio */
 	object-fit: cover;
 }
 

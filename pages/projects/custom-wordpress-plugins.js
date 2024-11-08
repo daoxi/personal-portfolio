@@ -2,7 +2,7 @@
 import classes from "../components/IntroTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 /* Import the images to be inserted into the page */
 import developerWpAdminMetabox from "../../public/assets/custom-wordpress-plugins-page/developer-wp-admin-metabox.png";
