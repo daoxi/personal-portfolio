@@ -49,7 +49,7 @@ function GetemProject() {
 						.
 					</p>
 					<p>
-						Here are a few screenshots (it&apos;s still recommended to check out
+						Below are a few screenshots (it&apos;s still recommended to check out
 						the{" "}
 						<a
 							href="https://getem.daoxisun.com"

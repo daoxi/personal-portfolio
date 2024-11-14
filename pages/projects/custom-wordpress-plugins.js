@@ -50,16 +50,7 @@ function CustomWordPressPlugins() {
 							rel="noopener noreferrer"
 						>
 							WordPress Coding Standards
-						</a>{" "}
-						with{" "}
-						<a
-							href="https://github.com/squizlabs/PHP_CodeSniffer"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							PHP_CodeSniffer
-						</a>
-						), data are saved in the{" "}
+						</a>), data are saved in the{" "}
 						<a
 							href="https://www.mysql.com/"
 							target="_blank"
@@ -88,7 +79,7 @@ function CustomWordPressPlugins() {
 						</a>
 						{"'"}s coding challenge), both need WordPress <b>admin access</b> to
 						the admin side (to test this part, either install the plugin(s) on
-						your own WordPress site or contact me to request temporary login
+						your own WordPress site or contact me to request login
 						credentials to the{" "}
 						<a
 							href="https://daoxisun.com/custom-wordpress-demo/"
