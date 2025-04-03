@@ -82,7 +82,7 @@ function CustomWordPressPlugins() {
 						your own WordPress site or contact me to request login
 						credentials to the{" "}
 						<a
-							href="https://daoxisun.com/custom-wordpress-demo/"
+							href="https://custom-wordpress-demo.daoxisun.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -147,7 +147,7 @@ function CustomWordPressPlugins() {
 						<br />
 						(You can find various posts on the{" "}
 						<a
-							href="https://daoxisun.com/custom-wordpress-demo/"
+							href="https://custom-wordpress-demo.daoxisun.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -222,7 +222,7 @@ function CustomWordPressPlugins() {
 						center can be used to navigate the slideshow. You can find an
 						example at{" "}
 						<a
-							href="https://daoxisun.com/custom-wordpress-demo/shortcode-slideshow-on-a-page/"
+							href="https://custom-wordpress-demo.daoxisun.com/shortcode-slideshow-on-a-page/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
