@@ -3,13 +3,13 @@ import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import BackToProjects from "../components/BackToProjects";
 
 /* Import the images to be inserted into the page */
 import developerWpAdminMetabox from "../../public/assets/custom-wordpress-plugins-page/developer-wp-admin-metabox.png";
 import developerWpFrontend from "../../public/assets/custom-wordpress-plugins-page/developer-wp-frontend.png";
 import slideshowWpAdmin from "../../public/assets/custom-wordpress-plugins-page/slideshow-wp-admin.png";
 import slideshowWpFrontend from "../../public/assets/custom-wordpress-plugins-page/slideshow-wp-frontend.png";
-import BackToProjects from "../components/BackToProjects";
 
 function CustomWordPressPlugins() {
 	return (
@@ -50,7 +50,8 @@ function CustomWordPressPlugins() {
 							rel="noopener noreferrer"
 						>
 							WordPress Coding Standards
-						</a>), data are saved in the{" "}
+						</a>
+						), data are saved in the{" "}
 						<a
 							href="https://www.mysql.com/"
 							target="_blank"
@@ -79,8 +80,8 @@ function CustomWordPressPlugins() {
 						</a>
 						{"'"}s coding challenge), both need WordPress <b>admin access</b> to
 						the admin side (to test this part, either install the plugin(s) on
-						your own WordPress site or contact me to request login
-						credentials to the{" "}
+						your own WordPress site or contact me to request login credentials
+						to the{" "}
 						<a
 							href="https://custom-wordpress-demo.daoxisun.com/"
 							target="_blank"

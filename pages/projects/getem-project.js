@@ -3,14 +3,13 @@ import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import BackToProjects from "../components/BackToProjects";
 
 /* Import the images to be inserted into the page */
 import getemHomeManage from "../../public/assets/getem-project-page/getem-home-manage.png";
 import getemViewNote from "../../public/assets/getem-project-page/getem-view-note.png";
 import getemEditNote from "../../public/assets/getem-project-page/getem-edit-note.png";
 import getemEditNoteEditTags from "../../public/assets/getem-project-page/getem-edit-note-edit-tags.png";
-
-import BackToProjects from "../components/BackToProjects";
 
 function GetemProject() {
 	return (

@@ -3,8 +3,11 @@ import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import Head from "next/head";
-
+import Image from "next/image";
 import BackToProjects from "../components/BackToProjects";
+
+/* Import the images to be inserted into the page */
+import locationAssignmentScreenshot from "../../public/assets/location-assignment-page/location-assignment-screenshot.png";
 
 function LocationAssignment() {
 	return (
@@ -33,6 +36,22 @@ function LocationAssignment() {
 						, it utilises Google Maps JavaScript API, Google Places API (for
 						Autocomplete), and Google Time Zone API.
 					</p>
+					<Link
+						href={locationAssignmentScreenshot.src}
+						passHref
+						className={classes.insert_img_wrapper}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Image
+							className={classes.insert_img}
+							src={locationAssignmentScreenshot}
+							alt="locationAssignmentScreenshot"
+							width="874"
+							height="928"
+							title="Location Assignment Screenshot"
+						/>
+					</Link>
 					<p>
 						User can get location by browser/client, or input at search box
 						(Autocomplete enabled), or simply click on any point (including any

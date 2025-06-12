@@ -3,7 +3,6 @@ import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import Head from "next/head";
-
 import BackToProjects from "../components/BackToProjects";
 
 function LexusLandingPage() {

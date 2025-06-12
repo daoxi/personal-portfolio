@@ -3,12 +3,11 @@ import classes from "../components/ContentTemplate.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import BackToProjects from "../components/BackToProjects";
 
 /* Import the images to be inserted into the page */
 import slidesScreenshot from "../../public/assets/image-slides-generator-page/image-slides-generator-screenshot.png";
 import slidesScreenshot2 from "../../public/assets/image-slides-generator-page/image-slides-generator-screenshot2.png";
-
-import BackToProjects from "../components/BackToProjects";
 
 function ImageSlidesGenerator() {
 	return (
