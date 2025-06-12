@@ -1,4 +1,4 @@
-This is a personal portfolio project by Daoxi Sun, built with [React](https://reactjs.org/) and [Next.js](https://nextjs.org/).
+This is a personal portfolio project by Daoxi Sun, built with the [React](https://reactjs.org/) framework [Next.js](https://nextjs.org/).
 
 ## Set up
 To install all dependencies:

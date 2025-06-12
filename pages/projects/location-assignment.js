@@ -49,16 +49,8 @@ function LocationAssignment() {
 						>
 							Click here
 						</a>{" "}
-						to view the source code in its repository, and{" "}
-						<a
-							href="https://daoxisun.com/resources/location-map-time-assignment-demo/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							click here
-						</a>
-						{/* the link directs to where the demo is currently hosted, which is a seperate place from where this app itself (personal portfolio website) is deployed*/}{" "}
-						for the live demo, or watch the Youtube video below.
+						to view the source code in its repository, or watch the Youtube
+						video below.
 					</p>
 					<div className={classes["youtube-video"]}>
 						<YoutubeEmbed embedId="wiBBD6WVMKM" />
