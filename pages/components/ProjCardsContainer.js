@@ -10,6 +10,7 @@ import projThumbCraigsDota from "../../public/assets/proj-thumbnails/CraigsDota-
 import projThumbLexusLandingPage from "../../public/assets/proj-thumbnails/Lexus-Landing-Page-thumb.jpg";
 import projThumbImageSlidesGenerator from "../../public/assets/proj-thumbnails/Image-Slides-Generator-thumb.png";
 import projThumbGetem from "../../public/assets/proj-thumbnails/Getem-thumb.png";
+import projThumbPokedex from "../../public/assets/proj-thumbnails/Pokedex-thumb.png";
 import projThumbTest from "../../public/assets/test.png";
 import projThumbTestPortrait from "../../public/assets/test-portrait.png";
 
@@ -17,16 +18,28 @@ function ProjCardsContainer() {
 	return (
 		<div className={classes["cards-container"]}>
 			<ProjCard
+				tags={["Next.js", "TypeScript", "Tailwind CSS", "Radix UI"]}
+				img={projThumbPokedex}
+				title="Modern Pokédex"
+				description={
+					<span>
+						This is a Pokédex web app for exploring Pokémon's abilities, stats
+						chart, and other details by utilizing the PokéAPI.
+					</span>
+				}
+				buttontext="Check It Out!"
+				buttonlink="/projects/modern-pokedex"
+				customColor="#00BFFF"
+			/>
+
+			<ProjCard
 				tags={["React", "TypeScript", "Bootstrap", "SCSS"]}
 				img={projThumbGetem}
 				title="GetEm (Markdown Note App)"
 				description={
 					<span>
-						<strong>
-							This is my most recent and currently maintained project
-						</strong>
-						, a Markdown note taking app that also allows users to
-						search and manage different notes with their tags and much more.
+						This is a Markdown note taking app that also allows users to search
+						and manage different notes with their tags and much more.
 					</span>
 				}
 				buttontext="Check It Out!"

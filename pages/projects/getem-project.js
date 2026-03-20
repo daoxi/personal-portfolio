@@ -27,9 +27,9 @@ function GetemProject() {
 
 				<div className={classes.body}>
 					<p>
-						This is my{" "}
-						<strong>most recent and currently maintained project</strong>, you
-						can check out the{" "}
+						This is a Markdown note taking app that also allows users to search
+						and manage different notes with their tags and much more, you can
+						check out the{" "}
 						<a
 							href="https://getem.daoxisun.com"
 							target="_blank"
@@ -48,8 +48,8 @@ function GetemProject() {
 						.
 					</p>
 					<p>
-						Below are a few screenshots (it&apos;s still recommended to check out
-						the{" "}
+						Below are a few screenshots (it&apos;s still recommended to check
+						out the{" "}
 						<a
 							href="https://getem.daoxisun.com"
 							target="_blank"
